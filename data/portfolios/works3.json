@@ -1,0 +1,74 @@
+[
+  {
+    "img": "/dark/assets/imgs/works/projects/5/2.jpg",
+    "title": "Residencial Altavista",
+    "subTitle": "Departamentos de lujo en el corazón de la ciudad",
+    "link": "/proyectos/residencial-altavista",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quod ratione autem, quasi est delectus eum quam repudiandae esse a sit laborum? Doloremque sequi unde mollitia quidem dignissimos eos alias. Nobis eaque voluptatibus mollitia, aspernatur dolores aut soluta assumenda voluptate, dicta quibusdam odio esse fuga sed ipsum nulla vitae excepturi quidem cumque.",
+    "social": {
+      "facebook": "https://facebook.com/empresa",
+      "instagram": "https://instagram.com/empresa",
+      "whatsapp": "https://wa.me/123456789"
+    }
+  },
+  {
+    "img": "/dark/assets/imgs/works/projects/5/3.jpg",
+    "title": "Torre Horizonte",
+    "subTitle": "Vistas panorámicas y amenidades exclusivas",
+    "link": "/proyectos/torre-horizonte",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quod ratione autem, quasi est delectus eum quam repudiandae esse a sit laborum? Doloremque sequi unde mollitia quidem dignissimos eos alias. Nobis eaque voluptatibus mollitia, aspernatur dolores aut soluta assumenda voluptate, dicta quibusdam odio esse fuga sed ipsum nulla vitae excepturi quidem cumque.",
+    "social": {
+      "facebook": "https://facebook.com/empresa",
+      "instagram": "https://instagram.com/empresa",
+      "whatsapp": "https://wa.me/123456789"
+    }
+  },
+  {
+    "img": "/dark/assets/imgs/works/projects/5/4.jpg",
+    "title": "Condominio Costa Azul",
+    "subTitle": "Vive frente al mar con acceso privado a la playa",
+    "link": "/proyectos/condominio-costa-azul",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quod ratione autem, quasi est delectus eum quam repudiandae esse a sit laborum? Doloremque sequi unde mollitia quidem dignissimos eos alias. Nobis eaque voluptatibus mollitia, aspernatur dolores aut soluta assumenda voluptate, dicta quibusdam odio esse fuga sed ipsum nulla vitae excepturi quidem cumque.",
+    "social": {
+      "facebook": "https://facebook.com/empresa",
+      "instagram": "https://instagram.com/empresa",
+      "whatsapp": "https://wa.me/123456789"
+    }
+  },
+  {
+    "img": "/dark/assets/imgs/works/projects/5/5.jpg",
+    "title": "Parque Empresarial Norte",
+    "subTitle": "Oficinas corporativas en zona estratégica",
+    "link": "/proyectos/parque-empresarial-norte",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quod ratione autem, quasi est delectus eum quam repudiandae esse a sit laborum? Doloremque sequi unde mollitia quidem dignissimos eos alias. Nobis eaque voluptatibus mollitia, aspernatur dolores aut soluta assumenda voluptate, dicta quibusdam odio esse fuga sed ipsum nulla vitae excepturi quidem cumque.",
+    "social": {
+      "facebook": "https://facebook.com/empresa",
+      "instagram": "https://instagram.com/empresa",
+      "whatsapp": "https://wa.me/123456789"
+    }
+  },
+  {
+    "img": "/dark/assets/imgs/works/projects/5/6.jpg",
+    "title": "Villas del Bosque",
+    "subTitle": "Casas familiares rodeadas de naturaleza",
+    "link": "/proyectos/villas-del-bosque",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quod ratione autem, quasi est delectus eum quam repudiandae esse a sit laborum? Doloremque sequi unde mollitia quidem dignissimos eos alias. Nobis eaque voluptatibus mollitia, aspernatur dolores aut soluta assumenda voluptate, dicta quibusdam odio esse fuga sed ipsum nulla vitae excepturi quidem cumque.",
+    "social": {
+      "facebook": "https://facebook.com/empresa",
+      "instagram": "https://instagram.com/empresa",
+      "whatsapp": "https://wa.me/123456789"
+    }
+  },
+  {
+    "img": "/dark/assets/imgs/works/projects/5/v.jpg",
+    "title": "Plaza Central",
+    "subTitle": "Centro comercial y de servicios premium",
+    "link": "/proyectos/plaza-central",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quod ratione autem, quasi est delectus eum quam repudiandae esse a sit laborum? Doloremque sequi unde mollitia quidem dignissimos eos alias. Nobis eaque voluptatibus mollitia, aspernatur dolores aut soluta assumenda voluptate, dicta quibusdam odio esse fuga sed ipsum nulla vitae excepturi quidem cumque.",
+    "social": {
+      "facebook": "https://facebook.com/empresa",
+      "instagram": "https://instagram.com/empresa",
+      "whatsapp": "https://wa.me/123456789"
+    }
+  }
+]
