@@ -11,12 +11,9 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
-// Asegúrate de tener gsap y ScrollTrigger importados globalmente o aquí si es necesario
-// import gsap from 'gsap';
-// import ScrollTrigger from 'gsap/ScrollTrigger';
-
-onMounted(() => {
+import { onMounted, nextTick } from 'vue'
+onMounted(async () => {
+  await nextTick();
   gsap.from('.problem-title', {
     scrollTrigger: {
       trigger: '.problem-title',
@@ -56,7 +53,7 @@ onMounted(() => {
   flex-direction: column;
   align-items: flex-start;
   gap: 2.5rem;
-  padding: 0 2vw;
+  /* padding: 0 2vw; */
 }
 .problem-title {
   color: #fff;

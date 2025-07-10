@@ -25,15 +25,53 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
+import { onMounted, nextTick } from 'vue'
 
-onMounted(() => {
-  const tl = gsap.timeline();
-  tl.from('.header-hero', { y: 120, opacity: 0, duration: 1, ease: 'power2.out' });
-  tl.from('.header-title', { y: 40, opacity: 0, duration: 0.7, ease: 'power2.out' }, '-=0.7');
-  tl.from('.header-subtitle', { y: 30, opacity: 0, duration: 0.6, ease: 'power2.out' }, '-=0.5');
-  tl.from('.diagnostico-btn', { y: 20, opacity: 0, duration: 0.5, ease: 'power2.out' }, '-=0.4');
-  tl.from('.video-banner-responsive', { y: 40, opacity: 0, duration: 0.8, ease: 'power2.out' }, '-=0.3');
+onMounted(async () => {
+  await nextTick();
+  gsap.from('.header-title', {
+    scrollTrigger: {
+      trigger: '.header-title',
+      start: 'top 80%',
+    },
+    opacity: 0,
+    y: 40,
+    duration: 0.7,
+    ease: 'power2.out',
+  });
+  gsap.from('.header-subtitle', {
+    scrollTrigger: {
+      trigger: '.header-subtitle',
+      start: 'top 85%',
+    },
+    opacity: 0,
+    y: 30,
+    duration: 0.6,
+    delay: 0.2,
+    ease: 'power2.out',
+  });
+  gsap.from('.diagnostico-btn', {
+    scrollTrigger: {
+      trigger: '.diagnostico-btn',
+      start: 'top 90%',
+    },
+    opacity: 0,
+    y: 20,
+    duration: 0.5,
+    delay: 0.3,
+    ease: 'power2.out',
+  });
+  gsap.from('.video-banner-responsive', {
+    scrollTrigger: {
+      trigger: '.video-banner-responsive',
+      start: 'top 92%',
+    },
+    opacity: 0,
+    y: 40,
+    duration: 0.8,
+    delay: 0.4,
+    ease: 'power2.out',
+  });
 });
 </script>
 

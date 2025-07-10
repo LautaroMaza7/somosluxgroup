@@ -6,7 +6,7 @@
           <form class="contact-form">
             <div class="contact-row">
               <label class="contact-label">Nombre completo*</label>
-              <input type="text" name="name" placeholder="Full name" required class="contact-input" />
+              <input type="text" name="name" placeholder="Nombre completo" required class="contact-input" />
             </div>
             <div class="contact-row">
               <label class="contact-label">Email*</label>
@@ -14,11 +14,11 @@
             </div>
             <div class="contact-row">
               <label class="contact-label">WhatsApp*</label>
-              <input type="text" name="phone" placeholder="Phone" required class="contact-input" />
+              <input type="text" name="phone" placeholder="Telefono" required class="contact-input" />
             </div>
             <div class="contact-row">
               <label class="contact-label">Mensaje*</label>
-              <textarea name="message" placeholder="Send a message..." rows="4" required class="contact-textarea"></textarea>
+              <textarea name="message" placeholder="Escribir mensaje..." rows="4" required class="contact-textarea"></textarea>
             </div>
             <button type="submit" class="contact-btn">Enviar mensaje</button>
           </form>

@@ -12,12 +12,32 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue';
+import { onMounted, nextTick } from 'vue';
 
-onMounted(() => {
-  const tl = gsap.timeline();
-  tl.from('.about-knowus-title', { y: 40, opacity: 0, duration: 0.7, ease: 'power2.out' });
-  tl.from('.about-knowus-box', { y: 30, opacity: 0, duration: 0.7, ease: 'power2.out' }, '-=0.4');
+onMounted(async () => {
+  await nextTick();
+
+  gsap.from('.about-knowus-title', {
+    scrollTrigger: {
+      trigger: '.about-knowus-title',
+      start: 'top 80%',
+    },
+    opacity: 0,
+    y: 40,
+    duration: 0.7,
+    ease: 'power2.out',
+  });
+  gsap.from('.about-knowus-box', {
+    scrollTrigger: {
+      trigger: '.about-knowus-box',
+      start: 'top 85%',
+    },
+    opacity: 0,
+    y: 30,
+    duration: 0.7,
+    delay: 0.2,
+    ease: 'power2.out',
+  });
 });
 </script>
 
@@ -28,6 +48,7 @@ onMounted(() => {
   display: flex;
   justify-content: center;
 }
+
 .about-knowus-container {
   width: 100%;
   max-width: 900px;
@@ -37,6 +58,7 @@ onMounted(() => {
   align-items: flex-start;
   gap: 2rem;
 }
+
 .about-knowus-title {
   color: #fff;
   font-size: 2rem;
@@ -46,6 +68,7 @@ onMounted(() => {
   margin-bottom: 0.5rem;
   text-align: left;
 }
+
 .about-knowus-box {
   background: #232323;
   color: #fff;
@@ -53,15 +76,17 @@ onMounted(() => {
   padding: 1.3rem 1.5rem;
   font-size: 1.15rem;
   font-weight: 400;
-  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.10);
   transition: box-shadow 0.2s, transform 0.2s;
   line-height: 1.6;
   text-align: left;
 }
+
 .about-knowus-box:hover {
-  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.18);
   transform: translateY(-2px) scale(1.01);
 }
+
 .about-knowus-luxgroup {
   font-style: italic;
   font-weight: 600;
@@ -69,18 +94,22 @@ onMounted(() => {
   transition: color 0.2s, text-decoration 0.2s;
   cursor: pointer;
 }
+
 .about-knowus-luxgroup:hover {
   color: #14cf93;
   text-decoration: underline;
 }
+
 @media (max-width: 600px) {
   .about-knowus-container {
     max-width: 98vw;
     padding: 0 0.5rem;
   }
+
   .about-knowus-title {
     font-size: 1.2rem;
   }
+
   .about-knowus-box {
     font-size: 1rem;
     padding: 1rem 0.7rem;
