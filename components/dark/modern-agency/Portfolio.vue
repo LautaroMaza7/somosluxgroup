@@ -1,21 +1,5 @@
 <template>
-  <section id="proyectos" class="work-carsouel section-padding position-re o-hidden">
-    <div class="container">
-      <div class="sec-head mb-80">
-        <h6 class="sub-title main-color mb-15 fz-18" style="letter-spacing:3px;">
-          <span style="font-style:italic; font-weight:600;">NUESTROS PROYECTOS</span>
-        </h6>
-        <div class="bord pt-25 bord-thin-top d-flex align-items-center">
-          <h2 class="fz-60 fw-900 mb-30" style="line-height:1.1; letter-spacing:-2px;">
-            Proyectos <span class="main-color">destacados</span>
-          </h2>
-        </div>
-        <h5 class="mb-30 fw-400 line-height-40" style="color:#b7b7b7; max-width:700px;">
-          <span class="fw-700 fz-18" style="color:#fff;">En <span class="main-color">somosluxgroup</span> impulsamos desarrollos inmobiliarios que marcan tendencia y generan valor real.</span><br>
-          <!-- <span>Cada uno de nuestros proyectos es el resultado de una visión estratégica, creatividad y un profundo conocimiento del mercado. Nos especializamos en potenciar el posicionamiento, la comercialización y la diferenciación de emprendimientos únicos, acompañando a nuestros clientes en cada etapa para lograr resultados sobresalientes.</span> -->
-        </h5>
-      </div>
-    </div>
+  <section id="proyectos" class="portfolio-showcase section-padding position-re o-hidden">
     <div class="container-fluid rest">
       <div class="row">
         <div class="col-12">
@@ -140,12 +124,12 @@ watch(selectedProject, (val) => {
 
 <style scoped>
 .portfolio-showcase {
-  background: #18181b;
-  padding: 80px 0;
+  background: #000;
+  padding: 6vw 0 6vw 0;
   overflow: hidden;
 }
 .slider-wrapper {
-  margin-bottom: 40px;
+  margin-bottom: 2.5vw;
 }
 .slider-wrapper.reverse .portfolio-slider .swiper-wrapper {
   flex-direction: row-reverse;
@@ -169,17 +153,17 @@ watch(selectedProject, (val) => {
   transition: box-shadow 0.4s cubic-bezier(.4,2,.3,1);
 }
 .project-info {
-  margin-top: 18px;
+  margin-top: 1.2vw;
   color: #fff;
   text-align: left;
 }
 .project-info span {
-  font-size: 0.95rem;
+  font-size: clamp(0.9rem, 2vw, 0.98rem);
   color: #a3a3a3;
   letter-spacing: 1px;
 }
 .project-info h6 {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2vw, 1.2rem);
   font-weight: 600;
   margin: 0;
   color: #fff;
@@ -194,11 +178,12 @@ watch(selectedProject, (val) => {
   align-items: center;
   justify-content: center;
   pointer-events: auto;
+  padding: 2vw;
 }
 .modal-content {
   background: #23232b;
-  border-radius: 22px;
-  padding: 2.5rem 2rem 2rem 2rem;
+  border-radius: 1.2em;
+  padding: 2.5em 2em 2em 2em;
   max-width: 95vw;
   max-height: 90vh;
   box-shadow: 0 12px 64px 0 rgba(0,0,0,0.55);
@@ -215,209 +200,136 @@ watch(selectedProject, (val) => {
 }
 .close-btn {
   position: absolute;
-  top: 1.1rem;
-  right: 1.1rem;
-  background: transparent;
+  top: 1.2em;
+  right: 1.2em;
+  background: none;
   border: none;
-  font-size: 2.2rem;
   color: #fff;
+  font-size: 2rem;
   cursor: pointer;
+  z-index: 10;
   transition: color 0.2s;
-  z-index: 2002;
 }
 .close-btn:hover {
-  color: #ffb347;
+  color: #14cf93;
 }
 .modal-img-wrap {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1.2rem;
+  max-width: 480px;
+  margin: 0 auto 1.5em auto;
 }
 .modal-img {
   width: 100%;
-  max-width: 420px;
-  max-height: 320px;
+  border-radius: 1.2em;
   object-fit: cover;
-  border-radius: 16px;
-  box-shadow: 0 4px 32px rgba(0,0,0,0.18);
-  background: #18181b;
-  transition: box-shadow 0.3s, transform 0.3s;
-}
-.modal-img:hover {
-  box-shadow: 0 8px 48px 0 rgba(255,179,71,0.18);
-  transform: scale(1.03) rotate(-1deg);
+  max-height: 60vh;
 }
 .modal-title {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #ffb347;
-  margin-bottom: 0.5rem;
-  letter-spacing: 1px;
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-weight: 800;
+  margin-bottom: 0.5em;
+  color: #fff;
 }
 .modal-subtitle {
-  font-size: 1.15rem;
-  color: #e0e0e0;
-  margin-bottom: 0.5rem;
-  letter-spacing: 0.5px;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: #b7ffdf;
+  margin-bottom: 1em;
 }
 .modal-description {
-  font-size: 1.08rem;
-  color: #bdbdbd;
-  margin-bottom: 1.2rem;
-  line-height: 1.6;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: clamp(0.98rem, 2vw, 1.08rem);
+  color: #e0e0e0;
+  margin-bottom: 1.5em;
+  text-align: left;
 }
 .modal-social {
   display: flex;
+  gap: 1.2em;
+  margin-top: 1.2em;
   justify-content: center;
-  gap: 1.2rem;
-  margin-top: 1.2rem;
-  margin-bottom: 0.2rem;
 }
 .social-icon {
-  width: 38px;
-  height: 38px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: #23232b;
-  color: #ffb347;
-  font-size: 1.5rem;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
-  transition: background 0.2s, color 0.2s, transform 0.2s;
-  text-decoration: none;
-}
-.social-icon.facebook:hover {
-  background: #1877f2;
   color: #fff;
-  transform: scale(1.12);
+  font-size: 1.5em;
+  transition: color 0.2s;
 }
-.social-icon.instagram:hover {
-  background: radial-gradient(circle at 30% 110%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  color: #fff;
-  transform: scale(1.12);
-}
-.social-icon.whatsapp:hover {
-  background: #25d366;
-  color: #fff;
-  transform: scale(1.12);
+.social-icon:hover {
+  color: #14cf93;
 }
 .modal-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(24,24,27,0.82);
+  background: rgba(0,0,0,0.45);
   z-index: 2000;
-  animation: backdropIn 0.38s cubic-bezier(.4,2,.3,1);
 }
-@keyframes modalIn {
-  0% { opacity: 0; transform: scale(0.92) translateY(40px); }
-  100% { opacity: 1; transform: scale(1) translateY(0); }
+@media (max-width: 1200px) {
+  .portfolio-showcase {
+    padding: 8vw 0 8vw 0;
+  }
+  .slider-wrapper {
+    margin-bottom: 3vw;
+  }
+  .modal-content {
+    padding: 1.5em 0.7em 1em 0.7em;
+    max-width: 99vw;
+  }
+  .modal-img-wrap {
+    max-width: 98vw;
+  }
 }
-@keyframes backdropIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+@media (max-width: 900px) {
+  .portfolio-showcase {
+    padding: 10vw 0 10vw 0;
+  }
+  .slider-wrapper {
+    margin-bottom: 4vw;
+  }
+  .portfolio-slider {
+    padding: 0 1vw;
+  }
+  .modal-content {
+    padding: 1em 0.3em 0.7em 0.3em;
+    border-radius: 0.7em;
+  }
+  .modal-img-wrap {
+    max-width: 100vw;
+  }
+  .modal-title {
+    font-size: 1.1rem;
+  }
 }
-.modal-fade-enter-active, .modal-fade-leave-active {
-  transition: opacity 0.35s cubic-bezier(.4,2,.3,1);
+@media (max-width: 700px) {
+  .portfolio-slider {
+    padding: 0 0.5vw;
+  }
+  .slider-wrapper {
+    margin-bottom: 5vw;
+  }
+  .modal-content {
+    padding: 0.7em 0.1em 0.5em 0.1em;
+  }
+  .modal-img {
+    max-height: 40vh;
+  }
 }
-.modal-fade-enter-from, .modal-fade-leave-to {
-  opacity: 0;
-}
-.blog-modal-content {
-  max-width: 700px;
-  padding: 2.5rem 2.2rem 2rem 2.2rem;
-  background: #23232b;
-  border-radius: 22px;
-  box-shadow: 0 12px 64px 0 rgba(0,0,0,0.55);
-  color: #fff;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  gap: 0;
-  position: relative;
-  animation: modalIn 0.38s cubic-bezier(.4,2,.3,1);
-}
-.modal-img-wrap {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2.2rem;
-}
-.modal-img {
-  width: 100%;
-  max-width: 600px;
-  max-height: 340px;
-  object-fit: cover;
-  border-radius: 16px;
-  box-shadow: 0 4px 32px rgba(0,0,0,0.18);
-  background: #18181b;
-  transition: box-shadow 0.3s, transform 0.3s;
-}
-.modal-title {
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: #ffb347;
-  margin-bottom: 0.7rem;
-  letter-spacing: 1px;
-  line-height: 1.2;
-}
-.modal-subtitle {
-  font-size: 1.18rem;
-  color: #e0e0e0;
-  margin-bottom: 1.2rem;
-  letter-spacing: 0.5px;
-  font-weight: 500;
-}
-.modal-description {
-  font-size: 1.08rem;
-  color: #bdbdbd;
-  margin-bottom: 1.2rem;
-  line-height: 1.7;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.modal-social {
-  display: flex;
-  justify-content: flex-end;
-  gap: 1.2rem;
-  margin-top: 2.2rem;
-  margin-bottom: 0.2rem;
-}
-.social-icon {
-  width: 38px;
-  height: 38px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: #23232b;
-  color: #ffb347;
-  font-size: 1.5rem;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
-  transition: background 0.2s, color 0.2s, transform 0.2s;
-  text-decoration: none;
-}
-.social-icon.facebook:hover {
-  background: #1877f2;
-  color: #fff;
-  transform: scale(1.12);
-}
-.social-icon.instagram:hover {
-  background: radial-gradient(circle at 30% 110%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  color: #fff;
-  transform: scale(1.12);
-}
-.social-icon.whatsapp:hover {
-  background: #25d366;
-  color: #fff;
-  transform: scale(1.12);
+@media (max-width: 600px) {
+  .portfolio-showcase {
+    padding: 12vw 0 12vw 0;
+  }
+  .slider-wrapper {
+    margin-bottom: 6vw;
+  }
+  .portfolio-slider {
+    padding: 0 0.2vw;
+  }
+  .modal-content {
+    padding: 0.5em 0.05em 0.3em 0.05em;
+    border-radius: 0.5em;
+  }
+  .modal-img-wrap {
+    max-width: 100vw;
+  }
+  .modal-title {
+    font-size: 1rem;
+  }
 }
 </style>

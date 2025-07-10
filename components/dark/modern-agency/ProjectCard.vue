@@ -11,10 +11,10 @@
       <div class="img-blur" :class="{ active: isHovered }"></div>
       <div class="img-overlay"></div>
     </div>
-    <div class="project-info">
+    <!-- <div class="project-info">
       <span>{{ item.title }}</span>
       <h6>{{ item.subTitle }}</h6>
-    </div>
+    </div> -->
   </div>
 </template>
 

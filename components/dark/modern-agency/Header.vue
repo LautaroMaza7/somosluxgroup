@@ -1,155 +1,263 @@
 <template>
-  <header class="slider slider-prlx">
-    <div class="swiper-container parallax-slider">
-      <Swiper
-        effect="Parallax"
-        class="swiper-container parallax-slider"
-        v-bind="swiperOptions"
-        :modules="[Navigation, Parallax, Pagination]"
-        @swiper="onSwiper"
+  <header class="slider slider-prlx header-hero">
+    <div class="container text-center header-content">
+      <h1 class="header-title">NO HACEMOS LO QUE TODOS HACEN</h1>
+      <p class="header-subtitle">Mostramos tu desarrollo inmobiliario estratégicamente</p>
+      <button
+        class="diagnostico-btn"
+        aria-label="Agendar reunión de diagnóstico"
       >
-        <SwiperSlide>
-          <div
-            class="bg-img valign"
-            data-background="/dark/assets/imgs/header/bg1.jpg"
-            data-overlay-dark="4"
-          >
-            <div class="container">
-              <div class="caption text-center">
-                <h2 class="mb-30" data-swiper-parallax="-2000">Invierte en tu Futuro</h2>
-                <h1>
-                  <span data-swiper-parallax="-1000">Proyectos Inmobiliarios Exclusivos</span>
-                </h1>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div
-            class="bg-img valign"
-            data-background="/dark/assets/imgs/header/full/3.jpg"
-            data-overlay-dark="4"
-          >
-            <div class="container">
-              <div class="caption text-center">
-                <h2 class="mb-30" data-swiper-parallax="-2000">
-                  Vive el Cambio, Vive Mejor
-                </h2>
-                <h1>
-                  <span data-swiper-parallax="-1000">Desarrollos que Transforman</span>
-                </h1>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div
-            class="bg-img valign"
-            data-background="/dark/assets/imgs/header/bg-4.png"
-            data-overlay-dark="4"
-          >
-            <div class="container">
-              <div class="caption text-center">
-                <h2 class="mb-30" data-swiper-parallax="-2000">Haz Crecer tu Patrimonio</h2>
-                <h1>
-                  <span data-swiper-parallax="-1000">Invierte Hoy, Disfruta Siempre</span>
-                </h1>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-      </Swiper>
+        Agenda una reunión de diagnóstico
+        <span class="sin-costo">sin costo</span>
+      </button>
     </div>
-    <div class="slider-contro main-bg">
-      <div class="swiper-button-prev swiper-nav-ctrl" @click="goPrev">
-        <div>
-          <span>Prev</span>
-        </div>
-      </div>
-      <div class="ml-30 mr-30">
-        <span>/</span>
-      </div>
-      <div class="swiper-button-next swiper-nav-ctrl" @click="goNext">
-        <div>
-          <span>Next</span>
-        </div>
-      </div>
-
-      <div class="shap-left-bottom">
-        <svg
-          viewBox="0 0 11 11"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="w-11 h-11"
-        >
-          <path
-            d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
-            fill="#1a1a1a"
-          ></path>
-        </svg>
-      </div>
-      <div class="shap-right-top">
-        <svg
-          viewBox="0 0 11 11"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="w-11 h-11"
-        >
-          <path
-            d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
-            fill="#1a1a1a"
-          ></path>
-        </svg>
-      </div>
+    <div class="video-banner-responsive">
+      <iframe
+        class="video-iframe"
+        src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&loop=1&playlist=VIDEO_ID"
+        title="Video banner de la propuesta"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+      ></iframe>
     </div>
-    <div class="swiper-pagination"></div>
   </header>
 </template>
 
 <script setup>
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import { Navigation, Pagination, Parallax } from 'swiper';
-import { onMounted, ref } from 'vue';
-//= Common Scripts
-import loadBackgroudImages from '@/common/loadBackgroudImages';
-
-const swiperInstance = ref(null);
-
-function onSwiper(swiper) {
-  swiperInstance.value = swiper;
-}
-
-function goPrev() {
-  if (swiperInstance.value) {
-    swiperInstance.value.slidePrev();
-  }
-}
-function goNext() {
-  if (swiperInstance.value) {
-    swiperInstance.value.slideNext();
-  }
-}
-
-// Initialize background images when component is mounted
-onMounted(() => {
-  loadBackgroudImages();
+import { onMounted, nextTick } from 'vue'
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
+onMounted(async () => {
+  await nextTick();
+  gsap.from('.header-title', {
+    scrollTrigger: {
+      trigger: '.header-title',
+      start: 'top 80%',
+    },
+    opacity: 0,
+    y: 40,
+    duration: 0.7,
+    ease: 'power2.out',
+  });
+  gsap.from('.header-subtitle', {
+    scrollTrigger: {
+      trigger: '.header-subtitle',
+      start: 'top 85%',
+    },
+    opacity: 0,
+    y: 40,
+    duration: 0.6,
+    delay: 0.2,
+    ease: 'power2.out',
+  });
+  gsap.from('.diagnostico-btn', {
+    scrollTrigger: {
+      trigger: '.diagnostico-btn',
+      start: 'top 90%',
+    },
+    opacity: 0,
+    y: 40,
+    duration: 0.6,
+    delay: 0.3,
+    ease: 'power2.out',
+  });
+  gsap.from('.video-banner-responsive', {
+    scrollTrigger: {
+      trigger: '.video-banner-responsive',
+      start: 'top 92%',
+    },
+    opacity: 0,
+    y: 40,
+    duration: 0.7,
+    delay: 0.4,
+    ease: 'power2.out',
+  });
 });
-const swiperOptions = {
-  spaceBetween: 30,
-  speed: 600,
-  navigation: false, // Desactivamos la navegación automática de Swiper
-  pagination: {
-    el: '.swiper-pagination',
-  },
-};
+// Reemplaza 'VIDEO_ID' en el src del iframe por el ID real del video de YouTube
 </script>
 
 <style scoped>
-.swiper-nav-ctrl,
-.swiper-button-prev,
-.swiper-button-next {
-  cursor: pointer !important;
-  z-index: 10;
-  user-select: none;
+.header-hero {
+  background: #000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7vw;
+  padding-bottom: 3vw;
+  box-sizing: border-box;
+}
+.header-content {
+  margin-bottom: 3vw;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.2em;
+}
+.header-title {
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: clamp(1.5rem, 6vw, 2.7rem);
+  margin-bottom: 0.7em;
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+}
+.header-subtitle {
+  color: #e0e0e0;
+  font-size: clamp(1.05rem, 3vw, 1.25rem);
+  margin-bottom: 0.7em;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.diagnostico-btn {
+  background: linear-gradient(90deg, #232526 0%, #414345 100%);
+  color: #fff;
+  border: none;
+  border-radius: 1.5em;
+  padding: 1em 2.2em;
+  font-size: clamp(1rem, 2.5vw, 1.15rem);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  cursor: pointer;
+  box-shadow: 0 4px 18px 0 rgba(0,0,0,0.18);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+  outline: none;
+  margin-bottom: 0.7em;
+  max-width: 350px;
+  width: 100%;
+  justify-content: center;
+}
+.diagnostico-btn:hover, .diagnostico-btn:focus {
+  background: linear-gradient(90deg, #414345 0%, #232526 100%);
+  box-shadow: 0 6px 24px 0 rgba(0,0,0,0.22);
+  transform: translateY(-2px) scale(1.03);
+}
+.sin-costo {
+  font-size: 0.98em;
+  font-style: italic;
+  color: #bdbdbd;
+  margin-left: 0.5em;
+  font-weight: 400;
+}
+.video-banner-responsive {
+  background: #232323;
+  border-radius: 1.2em;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.28);
+  width: 100%;
+  max-width: 900px;
+  aspect-ratio: 16/9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  transition: border-radius 0.2s, box-shadow 0.2s;
+}
+.video-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+@media (max-width: 900px) {
+  .header-hero {
+    min-height: 70vh;
+    padding-top: 10vw;
+    padding-bottom: 4vw;
+  }
+  .header-content {
+    max-width: 98vw;
+    padding: 0 3vw;
+    gap: 1.1em;
+  }
+  .header-title {
+    font-size: clamp(1.2rem, 7vw, 2.1rem);
+    margin-bottom: 0.7em;
+  }
+  .header-subtitle {
+    font-size: clamp(1rem, 4vw, 1.1rem);
+    margin-bottom: 0.7em;
+  }
+  .video-banner-responsive {
+    max-width: 100vw;
+    border-radius: 1.2em;
+    margin-top: 1.2em;
+  }
+}
+@media (max-width: 700px) {
+  .header-hero {
+    min-height: 60vh;
+    padding-top: 12vw;
+    padding-bottom: 6vw;
+  }
+  .header-content {
+    padding: 0 4vw;
+    gap: 1em;
+  }
+  .header-title {
+    font-size: 1.1rem;
+    margin-bottom: 1.2em;
+  }
+  .header-subtitle {
+    font-size: 0.98rem;
+    margin-bottom: 1.2em;
+  }
+  .diagnostico-btn {
+    padding: 0.9em 1.2em;
+    font-size: 1rem;
+    margin-bottom: 1.2em;
+    max-width: 100%;
+  }
+  .video-banner-responsive {
+    border-radius: 1em;
+    aspect-ratio: 16/9;
+    min-height: 160px;
+    margin-top: 1.2em;
+  }
+}
+@media (max-width: 500px) {
+  .header-hero {
+    min-height: 50vh;
+    padding-top: 25vw;
+    padding-bottom: 8vw;
+  }
+  .header-content {
+    padding: 0 2vw;
+    gap: 0.7em;
+  }
+  .header-title {
+    font-size: 1rem;
+    margin-bottom: 1em;
+  }
+  .header-subtitle {
+    font-size: 0.92rem;
+    margin-bottom: 1em;
+  }
+  .diagnostico-btn {
+    padding: 0.7em 0.7em;
+    font-size: 0.93rem;
+    margin-bottom: 1em;
+    max-width: 100%;
+  }
+  .video-banner-responsive {
+    border-radius: 0.7em;
+    min-height: 110px;
+    margin-top: 0.7em;
+    max-width: 93vw;
+  }
+  
 }
 </style>
