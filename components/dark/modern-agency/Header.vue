@@ -83,7 +83,7 @@ onMounted(async () => {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 7vw;
+  padding-top: 10vw;
   padding-bottom: 3vw;
   box-sizing: border-box;
 }
@@ -104,14 +104,14 @@ onMounted(async () => {
   text-transform: uppercase;
   color: #fff;
   font-size: clamp(1.5rem, 6vw, 2.7rem);
-  margin-bottom: 0.7em;
+  margin-bottom: -0.7em;
   letter-spacing: 0.5px;
   line-height: 1.1;
 }
 .header-subtitle {
   color: #e0e0e0;
   font-size: clamp(1.05rem, 3vw, 1.25rem);
-  margin-bottom: 0.7em;
+  margin-bottom: 1.7em;
   font-weight: 400;
   line-height: 1.4;
 }
@@ -131,7 +131,7 @@ onMounted(async () => {
   transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
   outline: none;
   margin-bottom: 0.7em;
-  max-width: 350px;
+  max-width: 900px;
   width: 100%;
   justify-content: center;
 }
