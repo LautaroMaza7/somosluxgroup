@@ -104,7 +104,7 @@ onMounted(async () => {
   text-transform: uppercase;
   color: #fff;
   font-size: clamp(1.5rem, 6vw, 2.7rem);
-  margin-bottom: -0.7em;
+  margin-bottom: -0.3em;
   letter-spacing: 0.5px;
   line-height: 1.1;
 }
