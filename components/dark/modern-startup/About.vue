@@ -1,11 +1,15 @@
 <template>
-  <section class="about-knowus-section">
+  <section id="quienes-somos" class="about-knowus-section">
     <div class="about-knowus-container">
-      <h2 class="about-knowus-title">NOS CONOCEN POR..</h2>
+      <h2 class="about-knowus-title">¿Querés vender tu desarrollo más rápido?
+      </h2>
       <div class="about-knowus-box">
-        Ser la primer agencia <b>100% especializada</b> en desarrollos inmobiliarios. En
-        <span class="about-knowus-luxgroup">Lux group</span>
-        combinamos lo mejor de dos mundos: <b>Creatividad</b>, <b>estrategia</b> + un equipo comercial especializado.
+        En <span class="about-knowus-luxgroup">Lux Group</span> somos más que una <b>aceleradora comercial</b>:<br>
+        <b>Somos tu equipo de ventas</b> + <b>tu agencia creativa</b> especializada en <b>desarrollos
+          inmobiliarios</b>.<br>
+        Combinamos <b>estrategia</b>, <b>contenido poderoso</b>, <b>marketing inteligente</b> y <b>tecnología propia</b>
+        para que vendas más, con menos fricción y en menos tiempo.<br>
+        <a href="#" class="about-knowus-crm-link"><b>Ver demo de nuestro CRM propio</b></a>
       </div>
     </div>
   </section>
@@ -90,13 +94,27 @@ onMounted(async () => {
 .about-knowus-luxgroup {
   font-style: italic;
   font-weight: 600;
-  color: #b7ffdf;
+  color: #bdbdbd;
   transition: color 0.2s, text-decoration 0.2s;
   cursor: pointer;
 }
 
 .about-knowus-luxgroup:hover {
-  color: #14cf93;
+  color: #bdbdbd;
+  text-decoration: underline;
+}
+
+.about-knowus-crm-link {
+  color: #bdbdbd;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1.5px dashed #bdbdbd;
+  transition: color 0.2s, border-bottom 0.2s;
+}
+
+.about-knowus-crm-link:hover {
+  color: #bdbdbd;
+  border-bottom: 2px solid #bdbdbd;
   text-decoration: underline;
 }
 
@@ -113,6 +131,10 @@ onMounted(async () => {
   .about-knowus-box {
     font-size: 1rem;
     padding: 1rem 0.7rem;
+  }
+
+  .about-knowus-section {
+    padding: 1rem 0 1rem 0;
   }
 }
 </style>

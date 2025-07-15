@@ -1,5 +1,5 @@
 <template>
-  <section class="contact-section">
+  <section id="contacto" class="contact-section">
     <div class="contact-grid">
       <div class="contact-left">
         <div class="contact-box">
@@ -29,7 +29,7 @@
             </div>
             <div class="contact-info-item">
               <span class="contact-info-label">Oficina Central:</span>
-              <span class="contact-info-text">Buenos Aires, Argentina</span>
+              <span class="contact-info-text">Lavalle 1076 - Ituzaingó, Buenos Aires</span>
             </div>
             <div class="contact-info-item">
               <span class="contact-info-label">Email:</span>
@@ -40,6 +40,7 @@
               <a href="#0" class="contact-social"><i class="fab fa-facebook-f"></i></a>
               <a href="#0" class="contact-social"><i class="fab fa-youtube"></i></a>
               <a href="#0" class="contact-social"><i class="fab fa-tiktok"></i></a>
+              <a href="#0" class="contact-social"><i class="fab fa-linkedin-in"></i></a>
             </div>
           </div>
         </div>
@@ -112,40 +113,40 @@ onMounted(async () => {
 }
 .contact-box {
   background: #232323;
-  border-radius: 1.5em;
+  border-radius: 1.1em;
   box-shadow: 0 4px 24px 0 rgba(80,80,80,0.13);
-  padding: 2.2em 1.5em 1.5em 1.5em;
+  padding: 1.8em 1.5em;
   width: 100%;
-  max-width: 420px;
+  max-width: 340px;
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 1.2em;
   align-items: stretch;
 }
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 1.1em;
+  gap: 0.7em;
 }
 .contact-row {
   display: flex;
   flex-direction: column;
-  gap: 0.3em;
+  gap: 0.2em;
 }
 .contact-label {
   color: #fff;
-  font-size: 1.08rem;
+  font-size: 0.98rem;
   font-weight: 700;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.1em;
   letter-spacing: 0.2px;
 }
 .contact-input, .contact-textarea {
   background: #181818;
-  border: 1.5px solid #444;
-  border-radius: 0.9em;
+  border: 1.2px solid #444;
+  border-radius: 0.7em;
   color: #fff;
-  padding: 1em 1.2em;
-  font-size: 1.08rem;
+  padding: 0.7em 1em;
+  font-size: 0.98rem;
   width: 100%;
   margin-bottom: 0;
   transition: box-shadow 0.2s, border 0.2s;
@@ -161,11 +162,11 @@ onMounted(async () => {
   background: #fff;
   color: #181818;
   border: none;
-  border-radius: 0.9em;
-  padding: 1.1em 0;
-  font-size: 1.13rem;
+  border-radius: 0.7em;
+  padding: 0.8em 0;
+  font-size: 1.01rem;
   font-weight: 700;
-  margin-top: 0.7em;
+  margin-top: 0.5em;
   cursor: pointer;
   box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
   transition: box-shadow 0.2s, transform 0.2s;
@@ -195,12 +196,12 @@ onMounted(async () => {
   margin-right: 0.5rem;
 }
 .contact-info-link {
-  color: #b7ffdf;
+  color: #bdbdbd;
   text-decoration: none;
   transition: color 0.2s, text-decoration 0.2s;
 }
 .contact-info-link:hover {
-  color: #14cf93;
+  color: #bdbdbd;
   text-decoration: underline;
 }
 .contact-info-text {
@@ -218,7 +219,7 @@ onMounted(async () => {
   transition: color 0.2s;
 }
 .contact-social:hover {
-  color: #b7ffdf;
+  color: #bdbdbd;
 }
 .contact-right {
   flex: 1 1 320px;
@@ -285,8 +286,25 @@ onMounted(async () => {
     text-align: center;
   }
   .contact-box {
-    max-width: 99vw;
-    padding: 2em 0.7em 1.2em 0.7em;
+    max-width: 98vw;
+    padding: 1.1em 0.5em 0.8em 0.5em;
+    border-radius: 0.9em;
+  }
+  .contact-form {
+    gap: 0.5em;
+  }
+  .contact-label {
+    font-size: 0.93rem;
+  }
+  .contact-input, .contact-textarea {
+    font-size: 0.93rem;
+    padding: 0.6em 0.7em;
+    border-radius: 0.6em;
+  }
+  .contact-btn {
+    font-size: 0.97rem;
+    padding: 0.7em 0;
+    border-radius: 0.6em;
   }
   .contact-socials {
     justify-content: center;
@@ -300,21 +318,31 @@ onMounted(async () => {
 }
 @media (max-width: 600px) {
   .contact-section {
-    padding: 8vw 0 8vw 0;
+    padding: 20vw 0 8vw 0;
   }
   .contact-highlight-title {
     font-size: 1.3rem;
   }
   .contact-box {
-    padding: 1rem;
-    border-radius: 1em;
+    padding: 0.7em;
+    border-radius: 0.7em;
     max-width: 99vw;
   }
   .contact-form {
-    gap: 0.7em;
+    gap: 0.3em;
   }
-  .contact-row {
-    gap: 0.7em;
+  .contact-label {
+    font-size: 0.89rem;
+  }
+  .contact-input, .contact-textarea {
+    font-size: 0.89rem;
+    padding: 0.5em 0.5em;
+    border-radius: 0.5em;
+  }
+  .contact-btn {
+    font-size: 0.93rem;
+    padding: 0.6em 0;
+    border-radius: 0.5em;
   }
   .contact-info {
     font-size: 0.98rem;

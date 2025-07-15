@@ -10322,5 +10322,13 @@ footer.clean-footer.crev:before {
     top: 5vh !important;
   }
 }
-
+@media (max-width: 900px) {
+  .cursor {
+    display: none !important;
+  }
+  .main-bg {
+    background: #000000 !important;
+    padding: 0 2rem;
+}
+}
 /* ====================== [ End Responsive ] ====================== */

@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg bord blur">
     <div class="container">
       <a class="logo icon-img-100" href="#">
-        <img src="/dark/assets/imgs/lux_white.png" alt="logo" />
+        <img src="/dark/assets/imgs/lux_white.png" alt="logo" class="logo-img-responsive" />
       </a>
 
       <div class="topnav">
@@ -15,7 +15,7 @@
 
   <div :class="`hamenu ${isOpen && 'open'}`">
     <div class="logo icon-img-100">
-      <img src="/dark/assets/imgs/lux_white.png" alt="logo" />
+      <img src="/dark/assets/imgs/lux_white.png" alt="logo" class="logo-img-responsive" />
     </div>
     <div @click="closeMenu" class="close-menu cursor-pointer ti-close"></div>
     <div class="container">
@@ -30,7 +30,7 @@
         <div class="col-lg-7">
           <div class="menu-links">
             <ul class="main-menu rest">
-              <li @click="toggleSubMenu" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
+              <li @click="handleMenuLinkClick('#quienes-somos')" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
                 <div class="o-hidden">
                   <a href="#quienes-somos" class="link">
                     <span class="fill-text" data-text="Quiénes Somos">
@@ -39,7 +39,7 @@
                   </a>
                 </div>
               </li>
-              <li @click="toggleSubMenu" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
+              <li @click="handleMenuLinkClick('#servicios')" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
                 <div class="o-hidden">
                   <a href="#servicios" class="link">
                     <span class="fill-text" data-text="Servicios">
@@ -48,7 +48,7 @@
                   </a>
                 </div>
               </li>
-              <li @click="toggleSubMenu" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
+              <li @click="handleMenuLinkClick('#proyectos')" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
                 <div class="o-hidden">
                   <a href="#proyectos" class="link">
                     <span class="fill-text" data-text="Proyectos">
@@ -57,7 +57,7 @@
                   </a>
                 </div>
               </li>
-              <li @click="toggleSubMenu" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
+              <li @click="handleMenuLinkClick('#mision')" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
                 <div class="o-hidden">
                   <a href="#mision" class="link">
                     <span class="fill-text" data-text="Misión">
@@ -66,7 +66,7 @@
                   </a>
                 </div>
               </li>
-              <li @click="toggleSubMenu" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
+              <li @click="handleMenuLinkClick('#contacto')" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
                 <div class="o-hidden">
                   <a href="#contacto" class="link">
                     <span class="fill-text" data-text="Contacto">
@@ -259,4 +259,39 @@ function toggleSubMenu2(event) {
     }
   }
 }
+
+function handleMenuLinkClick(hash) {
+  // Navega a la sección y cierra el menú hamburguesa si está abierto
+  const hamenu = document.querySelector('.hamenu');
+  isOpen.value = false;
+  setTimeout(() => {
+    hamenu.style.left = '-100%';
+    // Navegación suave a la sección
+    const target = document.querySelector(hash);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      window.location.hash = hash;
+    }
+  }, 300);
+}
 </script>
+
+<style scoped>
+.logo-img-responsive {
+  max-width: 120px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+@media (max-width: 900px) {
+  .logo-img-responsive {
+    max-width: 90px;
+  }
+}
+@media (max-width: 600px) {
+  .logo-img-responsive {
+    max-width: 60px;
+  }
+}
+</style>

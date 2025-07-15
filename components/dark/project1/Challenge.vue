@@ -3,8 +3,14 @@
     <div class="problem-container">
       <h2 class="problem-title">EL PROBLEMA</h2>
       <div class="problem-box">
-        Muchos desarrolladores enfrentan la dificultad de posicionar sus emprendimientos de forma efectiva. Por más sólidos y atractivos que sean en términos de diseño, <span class="problem-italic">ubicación o calidad constructiva</span>, si no cuentan con una estrategia clara de proyección y venta, es muy probable que no logren captar la atención de inversores ni alcanzar el nivel de ventas esperado.<br><br>
-        La clave está en <b>comunicar correctamente el valor del proyecto</b> y diferenciarlo en un entorno saturado de ofertas similares.
+        <b>¿Qué problema resolvemos?</b><br>
+        <ul class="problem-list-numbered">
+          <li><span class="problem-number">1</span> Los equipos de venta tradicionales no están preparados para desarrollos</li>
+          <li><span class="problem-number">2</span> Se pierden leads por falta de seguimiento profesional</li>
+          <li><span class="problem-number">3</span> El desarrollador no tiene visibilidad real del proceso</li>
+          <li><span class="problem-number">4</span> El contenido no refleja el valor real del proyecto</li>
+          <li><span class="problem-number">5</span> El tiempo de comercialización se extiende innecesariamente</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -86,6 +92,41 @@ onMounted(async () => {
 .problem-italic {
   font-style: italic;
 }
+.problem-list {
+  margin: 1rem 0 0 0;
+  padding-left: 1.2em;
+  color: #fff;
+  font-size: 1.08em;
+  line-height: 1.7;
+  list-style: disc inside;
+}
+.problem-list-numbered {
+  margin: 1rem 0 0 0;
+  padding-left: 0;
+  color: #fff;
+  font-size: 1.08em;
+  line-height: 1.7;
+  list-style: none;
+}
+.problem-list-numbered li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.7em;
+}
+.problem-number {
+  display: inline-block;
+  min-width: 2em;
+  height: 2em;
+  margin-right: 0.7em;
+  background: #bdbdbd;
+  color: #232323;
+  font-weight: 800;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2em;
+  font-size: 1.1em;
+  box-shadow: 0 2px 8px 0 rgba(189, 189, 189, 0.10);
+}
 @media (max-width: 900px) {
   .problem-container {
     max-width: 98vw;
@@ -111,8 +152,11 @@ onMounted(async () => {
     font-size: 1.1rem;
   }
   .problem-box {
-    font-size: 0.98rem;
+    font-size: 1rem;
     padding: 0.9em 0.7em;
+  }
+  .problem-list-numbered li {
+    font-size: 1rem;
   }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <section class="services-crev section-padding" data-scroll-index="1">
+  <section id="servicios" class="services-section">
     <div class="container">
       <div class="sec-head mb-80">
         <h6 class="sub-title main-color mb-25">Our Specialize</h6>

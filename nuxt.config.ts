@@ -33,8 +33,16 @@ export default defineNuxtConfig({
           content: 'IE=edge',
         },
         {
+          name: 'robots',
+          content: 'index, follow',
+        },
+        {
+          name: 'googlebot',
+          content: 'index, follow',
+        },
+        {
           name: 'keywords',
-          content: 'agencia inmobiliaria, marketing inmobiliario, desarrollo inmobiliario, branding inmobiliario, renders inmobiliarios, posicionamiento inmobiliario, generación de leads, ventas inmobiliarias, somosluxgroup, consultoría inmobiliaria, estrategia comercial, proyectos inmobiliarios',
+          content: 'agencia inmobiliaria, marketing inmobiliario, desarrollo inmobiliario, branding inmobiliario, renders inmobiliarios, posicionamiento inmobiliario, generación de leads, ventas inmobiliarias, somosluxgroup, consultoría inmobiliaria, estrategia comercial, proyectos inmobiliarios, crm inmobiliario, ventas digitales, equipo de ventas, agencia creativa',
         },
         {
           name: 'description',
@@ -45,8 +53,16 @@ export default defineNuxtConfig({
           content: 'somosluxgroup - Agencia de Marketing y Desarrollo Inmobiliario',
         },
         {
+          name: 'publisher',
+          content: 'somosluxgroup',
+        },
+        {
           property: 'og:title',
           content: 'somosluxgroup | Agencia de Marketing y Desarrollo para Inmobiliarias',
+        },
+        {
+          property: 'og:site_name',
+          content: 'somosluxgroup',
         },
         {
           property: 'og:description',
@@ -61,12 +77,28 @@ export default defineNuxtConfig({
           content: 'es_ES',
         },
         {
+          property: 'og:locale:alternate',
+          content: 'en_US',
+        },
+        {
+          property: 'og:url',
+          content: 'https://somosluxgroup.com/',
+        },
+        {
           property: 'og:image',
           content: '/dark/assets/imgs/lux_white.png',
         },
         {
           name: 'twitter:card',
           content: 'summary_large_image',
+        },
+        {
+          name: 'twitter:site',
+          content: '@somosluxgroup',
+        },
+        {
+          name: 'twitter:creator',
+          content: '@somosluxgroup',
         },
         {
           name: 'twitter:title',
@@ -82,8 +114,12 @@ export default defineNuxtConfig({
         },
       ],
       link: [
-        { rel: 'icon', type: 'image/png', href: '/dark/assets/imgs/lux_white.png' },
+        { rel: 'icon', type: 'image/png', href: '/dark/assets/imgs/favicon1.png' },
         // Google Fonts
+        {
+          rel: 'canonical',
+          href: 'https://somosluxgroup.com/',
+        },
         {
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap',
@@ -106,6 +142,38 @@ export default defineNuxtConfig({
         { src: '/dark/assets/js/ScrollSmoother.min.js' },
         // { src: '/showcase/dark/assets/js/anime.min.js' },
         { src: '/dark/assets/js/scripts.js', defer: true },
+        // Bloque JSON-LD para datos estructurados de la organización
+        {
+          type: 'application/ld+json',
+          innerHTML: `{
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "somosluxgroup",
+            "url": "https://somosluxgroup.com/",
+            "logo": "https://somosluxgroup.com/dark/assets/imgs/lux_white.png",
+            "description": "Agencia líder en marketing, branding y desarrollo digital para inmobiliarias y desarrollos inmobiliarios.",
+            "sameAs": [
+              "https://www.instagram.com/somosluxgroup/",
+              "https://www.facebook.com/somosluxgroup/",
+              "https://www.linkedin.com/company/somosluxgroup/"
+            ],
+            "contactPoint": [{
+              "@type": "ContactPoint",
+              "telephone": "+54-9-11-2233-4455",
+              "contactType": "customer service",
+              "areaServed": "AR",
+              "availableLanguage": ["Spanish", "English"]
+            }],
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Lavalle 1076",
+              "addressLocality": "Ituzaingó",
+              "addressRegion": "Buenos Aires",
+              "postalCode": "1714",
+              "addressCountry": "AR"
+            }
+          }`,
+        },
       ],
     },
   },

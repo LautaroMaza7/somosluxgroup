@@ -79,7 +79,7 @@
 import data from '@/data/portfolios/works3.json';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Autoplay } from 'swiper';
-import { ref, watch } from 'vue';
+import { ref, watch, onMounted, onBeforeUnmount } from 'vue';
 import ProjectCard from './ProjectCard.vue';
 
 // Opciones base para Swiper (se sobreescriben en cada instancia)
@@ -120,6 +120,20 @@ watch(selectedProject, (val) => {
     document.body.style.overflow = '';
   }
 });
+
+onMounted(() => {
+  // Cerrar modal con ESC
+  window.addEventListener('keydown', handleEscClose);
+});
+onBeforeUnmount(() => {
+  window.removeEventListener('keydown', handleEscClose);
+});
+
+function handleEscClose(e) {
+  if (e.key === 'Escape' && selectedProject.value) {
+    closeModal();
+  }
+}
 </script>
 
 <style scoped>

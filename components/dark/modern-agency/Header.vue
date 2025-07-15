@@ -1,8 +1,10 @@
 <template>
   <header class="slider slider-prlx header-hero">
     <div class="container text-center header-content">
-      <h1 class="header-title">NO HACEMOS LO QUE TODOS HACEN</h1>
-      <p class="header-subtitle">Mostramos tu desarrollo inmobiliario estratégicamente</p>
+      <h1 class="header-title">ACELERADORA COMERCIAL DE
+        DESARROLLOS INMOBILIARIOS</h1>
+      <p class="header-subtitle">Redefinimos la forma de
+        comercializar</p>
       <button
         class="diagnostico-btn"
         aria-label="Agendar reunión de diagnóstico"
@@ -14,7 +16,7 @@
     <div class="video-banner-responsive">
       <iframe
         class="video-iframe"
-        src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&loop=1&playlist=VIDEO_ID"
+        src="https://www.youtube.com/embed/mdV-tH6_dCU?si=4oWo9-eWPqlU1Euy&autoplay=1&mute=0"
         title="Video banner de la propuesta"
         frameborder="0"
         allow="autoplay; encrypted-media"
@@ -89,7 +91,7 @@ onMounted(async () => {
 }
 .header-content {
   margin-bottom: 3vw;
-  max-width: 600px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 2vw;
@@ -131,7 +133,7 @@ onMounted(async () => {
   transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
   outline: none;
   margin-bottom: 0.7em;
-  max-width: 900px;
+  max-width: 500px;
   width: 100%;
   justify-content: center;
 }

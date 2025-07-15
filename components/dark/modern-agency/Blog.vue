@@ -95,7 +95,6 @@ onMounted(async () => {
   color: #fff;
   font-size: clamp(1rem, 2.5vw, 1.1rem);
   font-weight: 400;
-  margin-bottom: 2.5rem;
   text-align: left;
 }
 .convince-italic {
