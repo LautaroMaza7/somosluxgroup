@@ -6,10 +6,34 @@
         Nuestra <span class="convince-italic">información</span> y nuestros <span class="convince-italic">proyectos</span>
       </div>
       <div class="convince-cards-grid">
-        <div v-for="(card, i) in cards" :key="i" class="convince-card">
-          <img :src="card.img" :alt="card.title" class="convince-img" />
-          <div class="convince-card-title">{{ card.title }}</div>
-          <div class="convince-card-sub">{{ card.sub }}</div>
+        <div v-for="(card, i) in cards" :key="i">
+          <a :href="card.url" class="convince-card-link" target="_blank" rel="noopener">
+            <div class="convince-card">
+              <img :src="card.img" :alt="card.title" class="convince-img" />
+              <div class="convince-card-title">{{ card.title }}</div>
+              <div v-if="card.type === 'info'" class="convince-card-sub">{{ card.sub }}</div>
+              <div v-else-if="card.type === 'project'" class="convince-card-project">
+                <div class="project-data-block improved">
+                  <div class="project-row">
+                    <span class="project-icon"> <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path fill="#b7b7b7" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2c-3.33 0-10 1.67-10 5v1.5A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5V19c0-3.33-6.67-5-10-5Z"/></svg></span>
+                    <span class="project-label">Desarrollador:</span> <span class="project-value">{{ card.developer }}</span>
+                  </div>
+                  <div class="project-row">
+                    <span class="project-icon"> <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path fill="#b7b7b7" d="M12 2C7.03 2 3 6.03 3 11c0 5.25 7.11 10.39 8.13 11.13a1 1 0 0 0 1.13 0C13.89 21.39 21 16.25 21 11c0-4.97-4.03-9-9-9Zm0 13a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z"/></svg></span>
+                    <span class="project-label">Ubicación:</span> <span class="project-value highlight">{{ card.location }}</span>
+                  </div>
+                  <div class="project-row">
+                    <span class="project-icon"> <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#b7b7b7" stroke-width="2"/><path stroke="#b7b7b7" stroke-width="2" stroke-linecap="round" d="M12 7v5l3 3"/></svg></span>
+                    <span class="project-label">Estado:</span> <span class="project-value status">{{ card.status }}</span>
+                  </div>
+                  <div class="project-row">
+                    <span class="project-icon"> <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" fill="#b7b7b7"/><path d="M8 2v4M16 2v4" stroke="#fff" stroke-width="2"/><path d="M3 10h18" stroke="#fff" stroke-width="2"/></svg></span>
+                    <span class="project-label">Finalización:</span> <span class="project-value">{{ card.finish }}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </div>
@@ -19,12 +43,18 @@
 <script setup>
 import { onMounted, nextTick } from 'vue'
 const cards = [
-  { img: '/dark/assets/imgs/blog/b/2.jpg', title: 'Mentoría 01', sub: 'Información de valor para vos' },
-  { img: '/dark/assets/imgs/blog/b/3.jpg', title: 'Lo que hacemos', sub: 'Proyectos completos' },
+  { img: '/dark/assets/imgs/blog/b/2.jpg', title: 'Mentoría 01', sub: 'Información de valor para vos', type: 'info', url: 'https://ejemplo.com/mentoria' },
+  {
+    img: '/dark/assets/imgs/blog/b/3.jpg',
+    title: 'Proyecto - Ina',
+    type: 'project',
+    developer: 'Aspic',
+    location: 'Ituzaingó, Bs.As.',
+    status: '5%',
+    finish: '2027',
+    url: '/'
+  },
 ];
-// Asegúrate de tener gsap y ScrollTrigger importados globalmente o aquí si es necesario
-// import gsap from 'gsap';
-// import ScrollTrigger from 'gsap/ScrollTrigger';
 
 onMounted(async () => {
   await nextTick();
@@ -119,13 +149,14 @@ onMounted(async () => {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: box-shadow 0.2s, transform 0.2s;
+  transition: box-shadow 0.3s cubic-bezier(.4,2,.3,1), transform 0.3s cubic-bezier(.4,2,.3,1);
   cursor: pointer;
   justify-content: flex-start;
 }
 .convince-card:hover {
-  box-shadow: 0 8px 32px 0 rgba(80,80,80,0.18);
-  transform: scale(1.04);
+  box-shadow: 0 12px 32px 0 rgba(0,0,0,0.28), 0 2px 12px 0 rgba(0,0,0,0.10);
+  transform: translateY(-10px) scale(1.035);
+  z-index: 2;
 }
 .convince-img {
   width: 100%;
@@ -146,6 +177,70 @@ onMounted(async () => {
   font-size: clamp(0.95rem, 2vw, 1rem);
   font-weight: 400;
   text-align: center;
+}
+.convince-card-project {
+  width: 100%;
+  margin-top: 0.7em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-data-block {
+  width: 100%;
+  border-top: 1px solid #333;
+  padding-top: 0.7em;
+  margin-top: 0.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+}
+.project-data-block.improved {
+  background: rgba(24,24,24,0.98);
+  border-radius: 1em;
+  border-top: 1.5px solid #292929;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
+  padding: 1.1em 1.2em 1.1em 1.2em;
+  margin: 1.1em 0.7em 0.7em 0.7em;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35em;
+}
+.project-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.04rem;
+  margin-bottom: 0.18em;
+  gap: 0.5em;
+}
+.project-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 0.3em;
+  min-width: 18px;
+}
+.project-label {
+  color: #b7b7b7;
+  font-weight: 500;
+  font-size: 0.97rem;
+  margin-right: 0.2em;
+}
+.project-value {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.08rem;
+}
+.project-value.highlight {
+  color: #fff;
+}
+.project-value.status {
+  color: #fff;
+  font-weight: 800;
+}
+.convince-card-link {
+  text-decoration: none;
+  display: block;
 }
 @media (max-width: 900px) {
   .convince-container {
@@ -177,6 +272,24 @@ onMounted(async () => {
   }
   .convince-container {
     padding: 0 2vw;
+  }
+  .convince-card-project {
+    font-size: 0.95rem;
+  }
+  .project-data-block.improved {
+    padding: 0.7em 0.6em 0.7em 0.6em;
+    margin: 0.7em 0.2em 0.5em 0.2em;
+    gap: 0.18em;
+  }
+  .project-row {
+    font-size: 0.97rem;
+    gap: 0.3em;
+  }
+  .project-label {
+    font-size: 0.93rem;
+  }
+  .project-value {
+    font-size: 1.01rem;
   }
 }
 </style>

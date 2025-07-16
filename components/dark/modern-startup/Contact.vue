@@ -36,11 +36,11 @@
               <a href="mailto:contacto@somosluxgroup.com" class="contact-info-link">contacto@somosluxgroup.com</a>
             </div>
             <div class="contact-socials">
-              <a href="#0" class="contact-social"><i class="fab fa-instagram"></i></a>
-              <a href="#0" class="contact-social"><i class="fab fa-facebook-f"></i></a>
-              <a href="#0" class="contact-social"><i class="fab fa-youtube"></i></a>
-              <a href="#0" class="contact-social"><i class="fab fa-tiktok"></i></a>
-              <a href="#0" class="contact-social"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.instagram.com/somosluxgroup/" class="contact-social" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=61554866159867" class="contact-social" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.youtube.com/@somoslux" class="contact-social" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+              <a href="https://www.tiktok.com/@somosluxgroup" class="contact-social" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i></a>
+              <a href="https://www.linkedin.com/in/somos-lux-agencia/" class="contact-social" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
             </div>
           </div>
         </div>
