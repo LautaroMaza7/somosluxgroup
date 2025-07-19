@@ -43,7 +43,7 @@
 <script setup>
 import { onMounted, nextTick } from 'vue'
 const cards = [
-  { img: '/dark/assets/imgs/blog/b/2.jpg', title: 'Mentoría 01', sub: 'Información de valor para vos', type: 'info', url: 'https://ejemplo.com/mentoria' },
+  { img: '/dark/assets/imgs/INA.png', title: 'Mentoría 01', sub: 'Información de valor para vos', type: 'info', url: 'https://ejemplo.com/mentoria' },
   {
     img: '/dark/assets/imgs/blog/b/3.jpg',
     title: 'Proyecto - Ina',
@@ -52,7 +52,7 @@ const cards = [
     location: 'Ituzaingó, Bs.As.',
     status: '5%',
     finish: '2027',
-    url: '/'
+    url: 'https://somoslux.website/'
   },
 ];
 

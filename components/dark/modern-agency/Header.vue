@@ -16,7 +16,7 @@
     <div class="video-banner-responsive">
       <iframe
         class="video-iframe"
-        src="https://www.youtube.com/embed/mdV-tH6_dCU?si=4oWo9-eWPqlU1Euy&autoplay=1&mute=0"
+        src="https://www.youtube.com/embed/KktbY0xxKoI?si=X_dz5ChEUscjr9Fs&autoplay=1&mute=0"
         title="Video banner de la propuesta"
         frameborder="0"
         allow="autoplay; encrypted-media"
