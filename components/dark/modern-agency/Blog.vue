@@ -43,9 +43,9 @@
 <script setup>
 import { onMounted, nextTick } from 'vue'
 const cards = [
-  { img: '/dark/assets/imgs/INA.png', title: 'Mentoría 01', sub: 'Información de valor para vos', type: 'info', url: 'https://ejemplo.com/mentoria' },
+  { img: '/dark/assets/imgs/blog/b/2.jpg', title: 'Mentoría 01', sub: 'Información de valor para vos', type: 'info', url: 'https://ejemplo.com/mentoria' },
   {
-    img: '/dark/assets/imgs/blog/b/3.jpg',
+    img: '/dark/assets/imgs/INA.png',
     title: 'Proyecto - Ina',
     type: 'project',
     developer: 'Aspic',
