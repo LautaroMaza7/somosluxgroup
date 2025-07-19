@@ -113,7 +113,7 @@ onMounted(async () => {
 }
 .convince-title {
   color: #fff;
-  font-size: clamp(1.3rem, 4vw, 2rem);
+  font-size: clamp(2.2rem, 5vw, 2.7rem);
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -258,8 +258,7 @@ onMounted(async () => {
 }
 @media (max-width: 600px) {
   .convince-title {
-    font-size: 1.1rem;
-    margin-bottom: -1.8rem;
+    font-size: clamp(1.1rem, 7vw, 1.5rem);
   }
   .convince-subtitle {
     font-size: 1rem;

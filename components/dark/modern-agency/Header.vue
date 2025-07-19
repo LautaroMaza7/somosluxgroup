@@ -105,7 +105,7 @@ onMounted(async () => {
   font-weight: 800;
   text-transform: uppercase;
   color: #fff;
-  font-size: clamp(1.5rem, 6vw, 2.7rem);
+  font-size: clamp(2.2rem, 5vw, 2.7rem);
   margin-bottom: -0.3em;
   letter-spacing: 0.5px;
   line-height: 1.1;
@@ -182,10 +182,6 @@ onMounted(async () => {
     padding: 0 3vw;
     gap: 1.1em;
   }
-  .header-title {
-    font-size: clamp(1.2rem, 7vw, 2.1rem);
-    margin-bottom: 0.7em;
-  }
   .header-subtitle {
     font-size: clamp(1rem, 4vw, 1.1rem);
     margin-bottom: 0.7em;
@@ -205,10 +201,6 @@ onMounted(async () => {
   .header-content {
     padding: 0 4vw;
     gap: 1em;
-  }
-  .header-title {
-    font-size: 1.1rem;
-    margin-bottom: 1.2em;
   }
   .header-subtitle {
     font-size: 0.98rem;
@@ -237,10 +229,6 @@ onMounted(async () => {
     padding: 0 2vw;
     gap: 0.7em;
   }
-  .header-title {
-    font-size: 1rem;
-    margin-bottom: 1em;
-  }
   .header-subtitle {
     font-size: 0.92rem;
     margin-bottom: 1em;
@@ -257,6 +245,10 @@ onMounted(async () => {
     margin-top: 0.7em;
     max-width: 93vw;
   }
-  
+  @media (max-width: 600px) {
+    .header-title {
+      font-size: clamp(1.1rem, 7vw, 1.5rem);
+    }
+  }
 }
 </style>

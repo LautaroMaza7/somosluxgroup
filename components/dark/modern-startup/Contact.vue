@@ -246,7 +246,7 @@ onMounted(async () => {
 }
 .contact-highlight-title {
   color: #fff;
-  font-size: 2.3rem;
+  font-size: clamp(2.2rem, 5vw, 2.7rem);
   font-weight: 800;
   line-height: 1.05;
   letter-spacing: 0.5px;
@@ -320,9 +320,6 @@ onMounted(async () => {
   .contact-section {
     padding: 20vw 0 8vw 0;
   }
-  .contact-highlight-title {
-    font-size: 1.3rem;
-  }
   .contact-box {
     padding: 0.7em;
     border-radius: 0.7em;
@@ -354,6 +351,9 @@ onMounted(async () => {
   }
   .contact-right{
     flex: 1;
+  }
+  .contact-highlight-title {
+    font-size: clamp(1.1rem, 7vw, 1.5rem);
   }
 }
 </style>

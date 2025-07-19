@@ -65,7 +65,7 @@ onMounted(async () => {
 
 .about-knowus-title {
   color: #fff;
-  font-size: 2rem;
+  font-size: clamp(2.2rem, 5vw, 2.7rem);
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -125,7 +125,7 @@ onMounted(async () => {
   }
 
   .about-knowus-title {
-    font-size: 1.2rem;
+    font-size: clamp(1.1rem, 7vw, 1.5rem);
   }
 
   .about-knowus-box {

@@ -144,7 +144,7 @@ onMounted(async () => {
 
 .solution-title {
   color: #fff;
-  font-size: clamp(1.3rem, 4vw, 2rem);
+  font-size: clamp(2.2rem, 5vw, 2.7rem);
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -220,7 +220,7 @@ onMounted(async () => {
 
 .services-title {
   color: #fff;
-  font-size: clamp(1.1rem, 3vw, 1.7rem);
+  font-size: clamp(2.2rem, 5vw, 2.7rem);
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -347,6 +347,10 @@ onMounted(async () => {
 }
 
 @media (max-width: 600px) {
+  .solution-title,
+  .services-title {
+    font-size: clamp(1.1rem, 7vw, 1.5rem);
+  }
   .solution-list-numbered li {
     font-size: 1rem;
     padding: 0.7em 0.5em;
@@ -372,9 +376,9 @@ onMounted(async () => {
     margin-top: -2rem;
   }
 
-  .services-title {
+  /* .services-title {
     font-size: 1em;
     margin-top: 2rem;
-  }
+  } */
 }
 </style>

@@ -63,7 +63,7 @@ onMounted(async () => {
 }
 .problem-title {
   color: #fff;
-  font-size: clamp(1.3rem, 4vw, 2.2rem);
+  font-size: clamp(2.2rem, 5vw, 2.7rem);
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -132,9 +132,6 @@ onMounted(async () => {
     max-width: 98vw;
     padding: 0 3vw;
   }
-  .problem-title {
-    font-size: clamp(1.1rem, 5vw, 1.5rem);
-  }
   .problem-box {
     font-size: clamp(0.98rem, 3vw, 1.05rem);
     padding: 1.1em 1em;
@@ -148,15 +145,15 @@ onMounted(async () => {
     padding: 0 2vw;
     gap: 1.2rem;
   }
-  .problem-title {
-    font-size: 1.1rem;
-  }
   .problem-box {
     font-size: 1rem;
     padding: 0.9em 0.7em;
   }
   .problem-list-numbered li {
     font-size: 1rem;
+  }
+  .problem-title {
+    font-size: clamp(1.1rem, 7vw, 1.5rem);
   }
 }
 </style>
