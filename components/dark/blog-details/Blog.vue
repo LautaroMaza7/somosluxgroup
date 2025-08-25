@@ -8,15 +8,18 @@
 
 <!-- 
 <template>
-  <section class="blog-details section-padding">
+  <section class="blog-details section-padding sub-bg">
     <div class="container">
       <div class="row">
         <div class="col-lg-8">
-          <div class="main-post">
+          <div class="item">
             <div class="img">
-              <img src="/dark/assets/imgs/blog/b2.jpg" alt="" />
+              <img src="/dark/assets/imgs/blog/b/1.jpg" alt="" />
+              <div class="tag sub-bg">
+                <span>Envato</span>
+              </div>
             </div>
-            <div class="content">
+            <div class="cont">
               <div class="info">
                 <div class="author">
                   <img src="/dark/assets/imgs/blog/author.png" alt="" />
@@ -28,7 +31,7 @@
                   <span class="month">Aug</span>
                 </div>
               </div>
-              <h2>How to use solid color combine with simple furnitures</h2>
+              <h3>How to use solid color combine with simple furnitures</h3>
               <p>
                 We provide digital experience services to startups and small
                 businesses. We help our clients succeed by creating brand
@@ -39,49 +42,11 @@
                 businesses. We help our clients succeed by creating brand
                 identities.
               </p>
-              <div class="img">
-                <img src="/dark/assets/imgs/blog/b3.jpg" alt="" />
-              </div>
               <p>
                 We provide digital experience services to startups and small
                 businesses. We help our clients succeed by creating brand
                 identities.
               </p>
-              <p>
-                We provide digital experience services to startups and small
-                businesses. We help our clients succeed by creating brand
-                identities.
-              </p>
-              <div class="quote">
-                <p>
-                  "We provide digital experience services to startups and small
-                  businesses. We help our clients succeed by creating brand
-                  identities."
-                </p>
-                <span>- John Doe</span>
-              </div>
-              <p>
-                We provide digital experience services to startups and small
-                businesses. We help our clients succeed by creating brand
-                identities.
-              </p>
-              <p>
-                We provide digital experience services to startups and small
-                businesses. We help our clients succeed by creating brand
-                identities.
-              </p>
-              <div class="tags">
-                <span>Tags:</span>
-                <a href="#0">Design</a>
-                <a href="#0">Development</a>
-                <a href="#0">Marketing</a>
-              </div>
-              <div class="share">
-                <span>Share:</span>
-                <a href="#0">Facebook</a>
-                <a href="#0">Twitter</a>
-                <a href="#0">LinkedIn</a>
-              </div>
             </div>
           </div>
         </div>
@@ -109,25 +74,16 @@
               <h6>Recent Posts</h6>
               <ul>
                 <li>
-                  <img src="/dark/assets/imgs/blog/c1.jpg" alt="" />
-                  <div>
-                    <a href="#0">How to use solid color combine with simple furnitures</a>
-                    <span>15 Aug 2021</span>
-                  </div>
+                  <a href="#0">How to use solid color combine with simple furnitures</a>
+                  <span>15 Aug 2021</span>
                 </li>
                 <li>
-                  <img src="/dark/assets/imgs/blog/c2.jpg" alt="" />
-                  <div>
-                    <a href="#0">How to use solid color combine with simple furnitures</a>
-                    <span>15 Aug 2021</span>
-                  </div>
+                  <a href="#0">How to use solid color combine with simple furnitures</a>
+                  <span>15 Aug 2021</span>
                 </li>
                 <li>
-                  <img src="/dark/assets/imgs/blog/c3.jpg" alt="" />
-                  <div>
-                    <a href="#0">How to use solid color combine with simple furnitures</a>
-                    <span>15 Aug 2021</span>
-                  </div>
+                  <a href="#0">How to use solid color combine with simple furnitures</a>
+                  <span>15 Aug 2021</span>
                 </li>
               </ul>
             </div>

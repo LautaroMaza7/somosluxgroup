@@ -14,17 +14,21 @@
         <div class="col-lg-8">
           <div class="item mb-50">
             <div class="img">
-              <img src="/dark/assets/imgs/blog/b/7.jpg" alt="" />
+              <img src="/dark/assets/imgs/blog/b/1.jpg" alt="" />
+              <div class="tag sub-bg">
+                <span>Envato</span>
+              </div>
             </div>
             <div class="cont">
               <div class="info">
+                <div class="author">
+                  <img src="/dark/assets/imgs/blog/author.png" alt="" />
+                  <span>By <a href="#0">Admin</a></span>
+                  <span>In <a href="#0">Design</a></span>
+                </div>
                 <div class="date">
                   <span class="num">15</span>
                   <span class="month">Aug</span>
-                </div>
-                <div class="author">
-                  <span>By <a href="#0">Admin</a></span>
-                  <span>In <a href="#0">Design</a></span>
                 </div>
               </div>
               <h5>
@@ -40,17 +44,111 @@
           </div>
           <div class="item mb-50">
             <div class="img">
-              <img src="/dark/assets/imgs/blog/b/8.jpg" alt="" />
+              <img src="/dark/assets/imgs/blog/b/3.jpg" alt="" />
+              <div class="tag sub-bg">
+                <span>Envato</span>
+              </div>
             </div>
             <div class="cont">
               <div class="info">
+                <div class="author">
+                  <img src="/dark/assets/imgs/blog/author.png" alt="" />
+                  <span>By <a href="#0">Admin</a></span>
+                  <span>In <a href="#0">Design</a></span>
+                </div>
                 <div class="date">
                   <span class="num">15</span>
                   <span class="month">Aug</span>
                 </div>
+              </div>
+              <h5>
+                <a href="#0">How to use solid color combine with simple furnitures</a>
+              </h5>
+              <p>
+                We provide digital experience services to startups and small
+                businesses. We help our clients succeed by creating brand
+                identities.
+              </p>
+              <a href="#0" class="more">Read More</a>
+            </div>
+          </div>
+          <div class="item mb-50">
+            <div class="img">
+              <img src="/dark/assets/imgs/blog/b/2.jpg" alt="" />
+              <div class="tag sub-bg">
+                <span>Envato</span>
+              </div>
+            </div>
+            <div class="cont">
+              <div class="info">
                 <div class="author">
+                  <img src="/dark/assets/imgs/blog/author.png" alt="" />
                   <span>By <a href="#0">Admin</a></span>
                   <span>In <a href="#0">Design</a></span>
+                </div>
+                <div class="date">
+                  <span class="num">15</span>
+                  <span class="month">Aug</span>
+                </div>
+              </div>
+              <h5>
+                <a href="#0">How to use solid color combine with simple furnitures</a>
+              </h5>
+              <p>
+                We provide digital experience services to startups and small
+                businesses. We help our clients succeed by creating brand
+                identities.
+              </p>
+              <a href="#0" class="more">Read More</a>
+            </div>
+          </div>
+          <div class="item mb-50">
+            <div class="img">
+              <img src="/dark/assets/imgs/blog/b/4.jpg" alt="" />
+              <div class="tag sub-bg">
+                <span>Envato</span>
+              </div>
+            </div>
+            <div class="cont">
+              <div class="info">
+                <div class="author">
+                  <img src="/dark/assets/imgs/blog/author.png" alt="" />
+                  <span>By <a href="#0">Admin</a></span>
+                  <span>In <a href="#0">Design</a></span>
+                </div>
+                <div class="date">
+                  <span class="num">15</span>
+                  <span class="month">Aug</span>
+                </div>
+              </div>
+              <h5>
+                <a href="#0">How to use solid color combine with simple furnitures</a>
+              </h5>
+              <p>
+                We provide digital experience services to startups and small
+                businesses. We help our clients succeed by creating brand
+                identities.
+              </p>
+              <a href="#0" class="more">Read More</a>
+            </div>
+          </div>
+          <div class="item mb-50">
+            <div class="img">
+              <img src="/dark/assets/imgs/blog/b/5.jpg" alt="" />
+              <div class="tag sub-bg">
+                <span>Envato</span>
+              </div>
+            </div>
+            <div class="cont">
+              <div class="info">
+                <div class="author">
+                  <img src="/dark/assets/imgs/blog/author.png" alt="" />
+                  <span>By <a href="#0">Admin</a></span>
+                  <span>In <a href="#0">Design</a></span>
+                </div>
+                <div class="date">
+                  <span class="num">15</span>
+                  <span class="month">Aug</span>
                 </div>
               </div>
               <h5>
@@ -66,17 +164,21 @@
           </div>
           <div class="item">
             <div class="img">
-              <img src="/dark/assets/imgs/blog/b/9.jpg" alt="" />
+              <img src="/dark/assets/imgs/blog/b/6.jpg" alt="" />
+              <div class="tag sub-bg">
+                <span>Envato</span>
+              </div>
             </div>
             <div class="cont">
               <div class="info">
+                <div class="author">
+                  <img src="/dark/assets/imgs/blog/author.png" alt="" />
+                  <span>By <a href="#0">Admin</a></span>
+                  <span>In <a href="#0">Design</a></span>
+                </div>
                 <div class="date">
                   <span class="num">15</span>
                   <span class="month">Aug</span>
-                </div>
-                <div class="author">
-                  <span>By <a href="#0">Admin</a></span>
-                  <span>In <a href="#0">Design</a></span>
                 </div>
               </div>
               <h5>

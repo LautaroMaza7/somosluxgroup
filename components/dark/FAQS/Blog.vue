@@ -1,101 +1,94 @@
 <template>
-  <section class="blog-list-half section-padding">
+  <div></div>
+</template>
+
+<script setup>
+// Componente comentado temporalmente
+</script>
+
+<!-- 
+<template>
+  <section class="blog section-padding sub-bg">
     <div class="container">
-      <div class="sec-head mb-80">
-        <h6 class="sub-title main-color mb-25">Our Blog</h6>
-        <div class="bord pt-25 bord-thin-top d-flex align-items-center">
-          <h2 class="fw-600">Read Latest <span class="fw-200">News</span></h2>
-          <div class="ml-auto">
-            <a href="/dark/blog-list2" class="go-more">
-              <span class="text">View all posts</span>
-              <span class="icon ti-arrow-top-right"></span>
-            </a>
-          </div>
-        </div>
-      </div>
       <div class="row">
-        <div class="col-lg-6">
-          <div class="item sub-bg md-mb50">
-            <div class="row rest">
-              <div class="col-lg-6 col-md-5 img rest">
-                <img
-                  src="/dark/assets/imgs/blog/b/2.jpg"
-                  alt=""
-                  class="img-post"
-                />
-                <div class="author d-flex align-items-center">
-                  <div>
-                    <div class="fit-img icon-img-50 circle">
-                      <img src="/dark/assets/imgs/blog/author.png" alt="" />
-                    </div>
-                  </div>
-                  <div class="ml-15 fz-14">
-                    <div>
-                      <span class="opacity-7">Posted by</span>
-                      <br />
-                      UiCamp
-                    </div>
-                  </div>
-                </div>
+        <div class="col-lg-4">
+          <div class="item sub-bg mb-40">
+            <div class="img">
+              <img src="/dark/assets/imgs/blog/b/2.jpg" alt="" />
+              <div class="tag sub-bg">
+                <span>Envato</span>
               </div>
-              <div class="col-lg-6 col-md-7 cont valign">
-                <div class="full-width">
-                  <div class="tags mb-15">
-                    <a href="/dark/blog-list">Marketing</a>
-                  </div>
-                  <h5>
-                    <a href="/dark/blog-details">
-                      Free advertising for your online business.
-                    </a>
-                  </h5>
-                  <span class="date fz-12 ls1 text-u opacity-7 mt-80">
-                    August 6, 2022
-                  </span>
-                </div>
+            </div>
+            <div class="cont">
+              <div class="date fz-13 text-u ls1 mb-10 opacity-7">
+                <a href="/dark/blog-details">30 august 2021</a>
               </div>
+              <h5>
+                <a href="/dark/blog-details">
+                  Creative advertising in our life became a info noise
+                </a>
+              </h5>
+              <a
+                href="/dark/blog-details"
+                class="d-flex align-items-center mt-30"
+              >
+                <span class="text mr-15">Read More</span>
+                <span class="ti-arrow-top-right"></span>
+              </a>
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
-          <div class="item sub-bg">
-            <div class="row rest">
-              <div class="col-lg-6 col-md-5 img rest">
-                <img
-                  src="/dark/assets/imgs/blog/b/3.jpg"
-                  alt=""
-                  class="img-post"
-                />
-                <div class="author d-flex align-items-center">
-                  <div>
-                    <div class="fit-img icon-img-50 circle">
-                      <img src="/dark/assets/imgs/blog/author.png" alt="" />
-                    </div>
-                  </div>
-                  <div class="ml-15 fz-14">
-                    <div>
-                      <span class="opacity-7">Posted by</span>
-                      <br />
-                      UiCamp
-                    </div>
-                  </div>
-                </div>
+        <div class="col-lg-4">
+          <div class="item sub-bg mb-40">
+            <div class="img">
+              <img src="/dark/assets/imgs/blog/b/3.jpg" alt="" />
+              <div class="tag sub-bg">
+                <span>Envato</span>
               </div>
-              <div class="col-lg-6 col-md-7 cont valign">
-                <div class="full-width">
-                  <div class="tags mb-15">
-                    <a href="/dark/blog-list">Marketing</a>
-                    <a href="/dark/blog-list">Design</a>
-                  </div>
-                  <h5>
-                    <a href="/dark/blog-details">
-                      Business meeting 2023 in San Francisco.
-                    </a>
-                  </h5>
-                  <span class="date fz-12 ls1 text-u opacity-7 mt-80">
-                    August 6, 2022
-                  </span>
-                </div>
+            </div>
+            <div class="cont">
+              <div class="date fz-13 text-u ls1 mb-10 opacity-7">
+                <a href="/dark/blog-details">30 august 2021</a>
               </div>
+              <h5>
+                <a href="/dark/blog-details">
+                  Creative advertising in our life became a info noise
+                </a>
+              </h5>
+              <a
+                href="/dark/blog-details"
+                class="d-flex align-items-center mt-30"
+              >
+                <span class="text mr-15">Read More</span>
+                <span class="ti-arrow-top-right"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="item sub-bg mb-40">
+            <div class="img">
+              <img src="/dark/assets/imgs/blog/b/1.jpg" alt="" />
+              <div class="tag sub-bg">
+                <span>Envato</span>
+              </div>
+            </div>
+            <div class="cont">
+              <div class="date fz-13 text-u ls1 mb-10 opacity-7">
+                <a href="/dark/blog-details">30 august 2021</a>
+              </div>
+              <h5>
+                <a href="/dark/blog-details">
+                  Creative advertising in our life became a info noise
+                </a>
+              </h5>
+              <a
+                href="/dark/blog-details"
+                class="d-flex align-items-center mt-30"
+              >
+                <span class="text mr-15">Read More</span>
+                <span class="ti-arrow-top-right"></span>
+              </a>
             </div>
           </div>
         </div>
@@ -103,3 +96,4 @@
     </div>
   </section>
 </template>
+-->
