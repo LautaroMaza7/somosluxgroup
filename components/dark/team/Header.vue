@@ -1,21 +1,31 @@
 <template>
+  <div></div>
+</template>
+
+<script setup>
+// Componente comentado temporalmente
+</script>
+
+<!-- 
+<template>
   <header
-    class="header page-header bg-img section-padding"
+    class="header page-header-cerv bg-img section-padding"
     data-background="/dark/assets/imgs/header/bg1.jpg"
-    data-overlay-dark="9"
+    data-overlay-dark="4"
   >
-    <div class="container pt-100">
+    <div class="container pt-100 ontop">
       <div class="text-center">
-        <h1 class="fz-100 text-u">Our Team.</h1>
+        <h1 class="fz-100">Our Team.</h1>
         <div class="mt-15">
           <a href="/dark/home-main">Home</a>
           <span class="padding-rl-20">|</span>
-          <span class="main-color">Our Team</span>
+          <span class="main-color">Team</span>
         </div>
       </div>
     </div>
   </header>
 </template>
+
 <script setup>
 import loadBackgroudImages from '@/common/loadBackgroudImages';
 
@@ -23,3 +33,4 @@ onMounted(() => {
   loadBackgroudImages();
 });
 </script>
+-->
