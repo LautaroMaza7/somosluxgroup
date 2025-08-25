@@ -117,7 +117,7 @@
                 <a href="mailto:contacto@somosluxgroup.com">contacto@somosluxgroup.com</a>
               </h5>
               <h5 class="underline mt-10">
-                <a href="tel:+5491122334455">+54-9 11-2233-4455</a>
+                <a href="tel:+5491132363489">+54-9-11-3236-3489</a>
               </h5>
             </div>
           </div>

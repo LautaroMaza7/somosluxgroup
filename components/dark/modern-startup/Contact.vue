@@ -25,7 +25,7 @@
           <div class="contact-info">
             <div class="contact-info-item">
               <span class="contact-info-label">Teléfono:</span>
-              <a href="tel:+5491122334455" class="contact-info-link">+54-9 11-2233-4455</a>
+              <a href="tel:+5491132363489" class="contact-info-link">+54-9-11-3236-3489</a>
             </div>
             <div class="contact-info-item">
               <span class="contact-info-label">Oficina Central:</span>

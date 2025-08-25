@@ -1,74 +1,65 @@
 [
   {
-    "img": "/dark/assets/imgs/works/projects/5/2.jpg",
-    "title": "Residencial Altavista",
-    "subTitle": "Departamentos de lujo en el corazón de la ciudad",
-    "link": "/proyectos/residencial-altavista",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quod ratione autem, quasi est delectus eum quam repudiandae esse a sit laborum? Doloremque sequi unde mollitia quidem dignissimos eos alias. Nobis eaque voluptatibus mollitia, aspernatur dolores aut soluta assumenda voluptate, dicta quibusdam odio esse fuga sed ipsum nulla vitae excepturi quidem cumque.",
-    "social": {
-      "facebook": "https://facebook.com/empresa",
-      "instagram": "https://instagram.com/empresa",
-      "whatsapp": "https://wa.me/123456789"
-    }
+    "img": "/dark/assets/imgs/works/projects/9.png",
+    "title": "IA especializadas en fotografía",
+    "subTitle": "Tecnología de vanguardia",
+    "description": "Además de un servicio profesional de fotografía, contamos con la tecnología del momento para mejorar escenarios de cualquier tipo con herramientas de IA.",
+    "type": "image"
   },
   {
-    "img": "/dark/assets/imgs/works/projects/5/3.jpg",
-    "title": "Torre Horizonte",
-    "subTitle": "Vistas panorámicas y amenidades exclusivas",
-    "link": "/proyectos/torre-horizonte",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quod ratione autem, quasi est delectus eum quam repudiandae esse a sit laborum? Doloremque sequi unde mollitia quidem dignissimos eos alias. Nobis eaque voluptatibus mollitia, aspernatur dolores aut soluta assumenda voluptate, dicta quibusdam odio esse fuga sed ipsum nulla vitae excepturi quidem cumque.",
-    "social": {
-      "facebook": "https://facebook.com/empresa",
-      "instagram": "https://instagram.com/empresa",
-      "whatsapp": "https://wa.me/123456789"
-    }
+    "img": "/dark/assets/imgs/works/projects/6.gif",
+    "title": "CONOCEMOS EL RUBRO",
+    "subTitle": "Profesionales especializados",
+    "description": "Contamos con profesionales en Arquitectura y Diseño para que cada imagen que de tu proyecto acelere los leads y ventas. De ser necesario podes pedir una asesoría para ultimar detalles de diseño en tu proyecto.",
+    "type": "gif"
   },
   {
-    "img": "/dark/assets/imgs/works/projects/5/4.jpg",
-    "title": "Condominio Costa Azul",
-    "subTitle": "Vive frente al mar con acceso privado a la playa",
-    "link": "/proyectos/condominio-costa-azul",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quod ratione autem, quasi est delectus eum quam repudiandae esse a sit laborum? Doloremque sequi unde mollitia quidem dignissimos eos alias. Nobis eaque voluptatibus mollitia, aspernatur dolores aut soluta assumenda voluptate, dicta quibusdam odio esse fuga sed ipsum nulla vitae excepturi quidem cumque.",
-    "social": {
-      "facebook": "https://facebook.com/empresa",
-      "instagram": "https://instagram.com/empresa",
-      "whatsapp": "https://wa.me/123456789"
-    }
+    "img": "/dark/assets/imgs/works/projects/8.png",
+    "title": "TECNOLOGÍA PROPIA Y ESPECIALIZADA",
+    "subTitle": "CRM desarrollado internamente",
+    "description": "Contamos con un CRM desarrollado por nosotros que se adapta a las últimas tecnologías del rubro y su marketing, para enterarte en vivo de cómo avanza tu proyecto desde cada lead calificado hasta cada venta cerrada.",
+    "type": "image"
   },
   {
-    "img": "/dark/assets/imgs/works/projects/5/5.jpg",
-    "title": "Parque Empresarial Norte",
-    "subTitle": "Oficinas corporativas en zona estratégica",
-    "link": "/proyectos/parque-empresarial-norte",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quod ratione autem, quasi est delectus eum quam repudiandae esse a sit laborum? Doloremque sequi unde mollitia quidem dignissimos eos alias. Nobis eaque voluptatibus mollitia, aspernatur dolores aut soluta assumenda voluptate, dicta quibusdam odio esse fuga sed ipsum nulla vitae excepturi quidem cumque.",
-    "social": {
-      "facebook": "https://facebook.com/empresa",
-      "instagram": "https://instagram.com/empresa",
-      "whatsapp": "https://wa.me/123456789"
-    }
+    "img": "/dark/assets/imgs/works/projects/5.gif",
+    "title": "MEJORAS EN RENDERS",
+    "subTitle": "Calidad y realismo superior",
+    "description": "Mejoramos la calidad y el realismo de cada Render para que tu desarrollo se vea mucho más auténtico, generando más expectativa en los inversores y compradores finales.",
+    "type": "gif"
   },
   {
-    "img": "/dark/assets/imgs/works/projects/5/6.jpg",
-    "title": "Villas del Bosque",
-    "subTitle": "Casas familiares rodeadas de naturaleza",
-    "link": "/proyectos/villas-del-bosque",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quod ratione autem, quasi est delectus eum quam repudiandae esse a sit laborum? Doloremque sequi unde mollitia quidem dignissimos eos alias. Nobis eaque voluptatibus mollitia, aspernatur dolores aut soluta assumenda voluptate, dicta quibusdam odio esse fuga sed ipsum nulla vitae excepturi quidem cumque.",
-    "social": {
-      "facebook": "https://facebook.com/empresa",
-      "instagram": "https://instagram.com/empresa",
-      "whatsapp": "https://wa.me/123456789"
-    }
+    "img": "/dark/assets/imgs/works/projects/7.png",
+    "title": "REDES Y MEDIOS DIGITALES",
+    "subTitle": "Presencia digital completa",
+    "description": "La creación y gestión de perfiles en medios digitales es la clave para existir en la actualidad. Nos encargamos de la creación y la ejecución de cada contenido para que tu proyecto sea visto y conocido por tu público objetivo.",
+    "type": "image"
   },
   {
-    "img": "/dark/assets/imgs/works/projects/5/v.jpg",
-    "title": "Plaza Central",
-    "subTitle": "Centro comercial y de servicios premium",
-    "link": "/proyectos/plaza-central",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quod ratione autem, quasi est delectus eum quam repudiandae esse a sit laborum? Doloremque sequi unde mollitia quidem dignissimos eos alias. Nobis eaque voluptatibus mollitia, aspernatur dolores aut soluta assumenda voluptate, dicta quibusdam odio esse fuga sed ipsum nulla vitae excepturi quidem cumque.",
-    "social": {
-      "facebook": "https://facebook.com/empresa",
-      "instagram": "https://instagram.com/empresa",
-      "whatsapp": "https://wa.me/123456789"
-    }
+    "img": "/dark/assets/imgs/works/projects/1.png",
+    "title": "PROJECT INA",
+    "subTitle": "Desarrollo Inmobiliario en Ituzaingó",
+    "description": "Desarrollo Inmobiliario que se llevará a cabo en Ituzaingó (Zona Oeste de Buenos Aires) con la idea de cambiar la forma de desarrollar. Cada unidad va a estar construida y diseñada a medida por su futuro propietario, a diferencia de otros desarrollo en la zona, este será el primero en construir pensando 100% en su inversor.",
+    "type": "project"
+  },
+  {
+    "img": "/dark/assets/imgs/works/projects/2.png",
+    "title": "ASPIC DESARROLLOS INMOBILIARIOS",
+    "subTitle": "Desarrolladora de confianza",
+    "description": "ASPIC es la desarrolladora que confío en nosotros para vender su 1° condominio en menos de 1 año.",
+    "type": "project"
+  },
+  {
+    "img": "/dark/assets/imgs/works/projects/3.png",
+    "title": "VIVIANA ODDONE PROPIEDADES",
+    "subTitle": "Inmobiliaria de Zona Oeste",
+    "description": "Inmobiliaria de Zona Oeste que confía en nosotros para llevar a cabo su marca y gestionar sus ingresos de Leads mediante pautas por diversos medios.",
+    "type": "project"
+  },
+  {
+    "img": "/dark/assets/imgs/works/projects/4.png",
+    "title": "FLIPPING",
+    "subTitle": "Marca de flipping house",
+    "description": "Marca de flipping house que confía en nuestro marketing desde su primera venta realizada en menos de una semana luego de que saliera a la luz su pauta. Gestionamos sus leads y calificamos los mejores para la venta.",
+    "type": "project"
   }
 ]

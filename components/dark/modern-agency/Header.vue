@@ -9,8 +9,10 @@
         class="diagnostico-btn"
         aria-label="Agendar reunión de diagnóstico"
       >
-        Agenda una reunión de diagnóstico
-        <span class="sin-costo">sin costo</span>
+        <div class="btn-text">
+          Agenda una reunión de diagnóstico
+          <span class="sin-costo">sin costo</span>
+        </div>
       </button>
     </div>
     <div class="video-banner-responsive">
@@ -127,7 +129,7 @@ onMounted(async () => {
   font-weight: 600;
   display: inline-flex;
   align-items: center;
-  gap: 0.5em;
+  justify-content: center;
   cursor: pointer;
   box-shadow: 0 4px 18px 0 rgba(0,0,0,0.18);
   transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
@@ -135,19 +137,28 @@ onMounted(async () => {
   margin-bottom: 0.7em;
   max-width: 500px;
   width: 100%;
-  justify-content: center;
 }
+
+.btn-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.sin-costo {
+  font-size: 0.9em;
+  font-style: italic;
+  color: #bdbdbd;
+  margin-top: 0.3em;
+  font-weight: 400;
+}
+
 .diagnostico-btn:hover, .diagnostico-btn:focus {
   background: linear-gradient(90deg, #414345 0%, #232526 100%);
   box-shadow: 0 6px 24px 0 rgba(0,0,0,0.22);
   transform: translateY(-2px) scale(1.03);
-}
-.sin-costo {
-  font-size: 0.98em;
-  font-style: italic;
-  color: #bdbdbd;
-  margin-left: 0.5em;
-  font-weight: 400;
 }
 .video-banner-responsive {
   background: #232323;

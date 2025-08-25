@@ -16,7 +16,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'somosluxgroup | Agencia de Marketing y Desarrollo para Inmobiliarias',
+      title: 'SomosLuxGroup | Agencia de Marketing y Desarrollo para Inmobiliarias',
       htmlAttrs: {
         lang: 'es',
       },
@@ -66,7 +66,7 @@ export default defineNuxtConfig({
         },
         {
           property: 'og:description',
-          content: 'Agencia líder en marketing, branding y desarrollo digital para inmobiliarias y desarrollos inmobiliarios. Estrategias, posicionamiento y generación de leads para tu proyecto.',
+          content: 'Aceleradora comercial de desarrollos inmobiliarios.',
         },
         {
           property: 'og:type',

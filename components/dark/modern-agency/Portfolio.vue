@@ -3,7 +3,7 @@
     <div class="container-fluid rest">
       <div class="row">
         <div class="col-12">
-          <!-- Primer slider: izquierda a derecha -->
+          <!-- Primer slider: primeros 5 elementos (izquierda a derecha) -->
           <div class="work-crus work-crus5 out slider-wrapper">
             <Swiper
               v-bind="swiperOptions"
@@ -16,12 +16,12 @@
               :space-between="40"
               :allow-touch-move="false"
             >
-              <SwiperSlide v-for="(item, i) in data" :key="'top-'+i">
+              <SwiperSlide v-for="(item, i) in firstFiveItems" :key="'top-'+i">
                 <ProjectCard :item="item" @open="openProject" />
               </SwiperSlide>
             </Swiper>
           </div>
-          <!-- Segundo slider: derecha a izquierda -->
+          <!-- Segundo slider: resto de elementos (derecha a izquierda) -->
           <div class="work-crus work-crus5 out slider-wrapper reverse">
             <Swiper
               v-bind="swiperOptions"
@@ -34,7 +34,7 @@
               :space-between="40"
               :allow-touch-move="false"
             >
-              <SwiperSlide v-for="(item, i) in data" :key="'bottom-'+i">
+              <SwiperSlide v-for="(item, i) in remainingItems" :key="'bottom-'+i">
                 <ProjectCard :item="item" @open="openProject" />
               </SwiperSlide>
             </Swiper>
@@ -79,8 +79,12 @@
 import data from '@/data/portfolios/works3.json';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Autoplay } from 'swiper';
-import { ref, watch, onMounted, onBeforeUnmount } from 'vue';
+import { ref, watch, onMounted, onBeforeUnmount, computed } from 'vue';
 import ProjectCard from './ProjectCard.vue';
+
+// Separar los datos: primeros 5 elementos y el resto
+const firstFiveItems = computed(() => data.slice(0, 5));
+const remainingItems = computed(() => data.slice(5));
 
 // Opciones base para Swiper (se sobreescriben en cada instancia)
 const swiperOptions = {
@@ -90,12 +94,24 @@ const swiperOptions = {
   spaceBetween: 40,
   allowTouchMove: false,
   breakpoints: {
+    320: {
+      slidesPerView: 1.2,
+      spaceBetween: 15,
+    },
+    480: {
+      slidesPerView: 1.5,
+      spaceBetween: 20,
+    },
     640: {
-      slidesPerView: 2,
+      slidesPerView: 2.2,
       spaceBetween: 20,
     },
     768: {
       slidesPerView: 3,
+      spaceBetween: 25,
+    },
+    900: {
+      slidesPerView: 4,
       spaceBetween: 30,
     },
     1000: {
@@ -142,6 +158,13 @@ function handleEscClose(e) {
   padding: 6vw 0 6vw 0;
   overflow: hidden;
 }
+
+/* Mejoras generales de responsividad */
+@media (max-width: 768px) {
+  .portfolio-showcase {
+    padding: 8vw 0 8vw 0;
+  }
+}
 .slider-wrapper {
   margin-bottom: 2.5vw;
 }
@@ -166,22 +189,31 @@ function handleEscClose(e) {
   overflow: visible;
   transition: box-shadow 0.4s cubic-bezier(.4,2,.3,1);
 }
+
+/* Mejoras para móviles */
+@media (max-width: 480px) {
+  .img-container {
+    aspect-ratio: 3/2;
+  }
+}
 .project-info {
   margin-top: 1.2vw;
   color: #fff;
   text-align: left;
 }
 .project-info span {
-  font-size: clamp(0.9rem, 2vw, 0.98rem);
+  font-size: clamp(0.75rem, 2vw, 0.98rem);
   color: #a3a3a3;
   letter-spacing: 1px;
+  line-height: 1.3;
 }
 .project-info h6 {
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-size: clamp(0.85rem, 2vw, 1.2rem);
   font-weight: 600;
   margin: 0;
   color: #fff;
   letter-spacing: 1px;
+  line-height: 1.2;
 }
 /* Modal refuerzo */
 .project-modal {
@@ -344,6 +376,77 @@ function handleEscClose(e) {
   }
   .modal-title {
     font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .portfolio-showcase {
+    padding: 15vw 0 15vw 0;
+  }
+  .slider-wrapper {
+    margin-bottom: 8vw;
+  }
+  .portfolio-slider {
+    padding: 0;
+  }
+  .project-info {
+    margin-top: 0.8vw;
+  }
+  .project-info span {
+    font-size: 0.8rem;
+  }
+  .project-info h6 {
+    font-size: 0.9rem;
+  }
+  .modal-content {
+    padding: 0.8em 0.5em 0.6em 0.5em;
+    border-radius: 0.8em;
+    max-width: 95vw;
+  }
+  .modal-img-wrap {
+    max-width: 90vw;
+  }
+  .modal-title {
+    font-size: 1.1rem;
+  }
+  .modal-subtitle {
+    font-size: 0.9rem;
+  }
+  .modal-description {
+    font-size: 0.85rem;
+  }
+}
+@media (max-width: 360px) {
+  .portfolio-showcase {
+    padding: 18vw 0 18vw 0;
+  }
+  .slider-wrapper {
+    margin-bottom: 10vw;
+  }
+  .project-info {
+    margin-top: 0.6vw;
+  }
+  .project-info span {
+    font-size: 0.75rem;
+  }
+  .project-info h6 {
+    font-size: 0.85rem;
+  }
+  .modal-content {
+    padding: 0.6em 0.3em 0.5em 0.3em;
+    border-radius: 0.6em;
+    max-width: 98vw;
+  }
+  .modal-img-wrap {
+    max-width: 95vw;
+  }
+  .modal-title {
+    font-size: 1rem;
+  }
+  .modal-subtitle {
+    font-size: 0.8rem;
+  }
+  .modal-description {
+    font-size: 0.8rem;
   }
 }
 </style>
