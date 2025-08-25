@@ -1,4 +1,13 @@
 <template>
+  <div></div>
+</template>
+
+<script setup>
+// Componente comentado temporalmente
+</script>
+
+<!-- 
+<template>
   <section class="next-project sub-bg">
     <div class="container-fluid rest">
       <div class="row">
@@ -50,11 +59,4 @@
     </div>
   </section>
 </template>
-
-<script setup>
-import loadBackgroudImages from '@/common/loadBackgroudImages';
-
-onMounted(() => {
-  loadBackgroudImages();
-});
-</script>
+-->

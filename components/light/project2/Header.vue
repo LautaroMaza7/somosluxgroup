@@ -1,4 +1,13 @@
 <template>
+  <div></div>
+</template>
+
+<script setup>
+// Componente comentado temporalmente
+</script>
+
+<!-- 
+<template>
   <header class="header-project2 section-padding pb-0">
     <div class="container mt-80 mb-80">
       <div class="row align-items-end">
@@ -80,3 +89,4 @@
     </div>
   </header>
 </template>
+-->

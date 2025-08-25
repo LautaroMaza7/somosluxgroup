@@ -1,30 +1,41 @@
 <template>
+  <div></div>
+</template>
+
+<script setup>
+// Componente comentado temporalmente
+</script>
+
+<!-- 
+<template>
   <LoadingScreen />
   <Cursor />
   <ProgressScroll />
   <Lines />
+  <Navbar />
   <div id="smooth-wrapper">
-    <Navbar />
     <div id="smooth-content">
       <main class="main-bg">
         <Header />
         <Challenge />
-        <Works />
         <Solution />
+        <Works />
         <Works2 />
         <Next />
       </main>
-      <Footer />
+      <div>
+        <Footer />
+      </div>
     </div>
   </div>
 </template>
 <script setup>
-import Footer from '@/components/dark/blog-details/Footer';
 import Lines from '@/components/dark/common/Lines';
 import ProgressScroll from '@/components/dark/common/ProgressScroll';
 import Cursor from '@/components/dark/common/cusor';
 import LoadingScreen from '@/components/dark/common/loader';
-import Navbar from '@/components/dark/portfolio-caption/Navbar';
+import Navbar from '@/components/dark/common/Navbar';
+import Footer from '@/components/dark/common/Footer';
 import Next from '@/components/dark/project2/Next';
 import Challenge from '@/components/dark/project3/Challenge';
 import Header from '@/components/dark/project3/Header';
@@ -39,9 +50,7 @@ useHead({
     { rel: 'stylesheet', href: '/dark/assets/css/satoshi.css' },
     { rel: 'stylesheet', href: '/dark/assets/css/style.css' },
   ],
-  // script: [{ src: '/dark/assets/js/smoother-script.js', defer: true }],
 });
-
 onMounted(() => {
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
   ScrollTrigger.normalizeScroll(true);
@@ -51,3 +60,4 @@ onMounted(() => {
   });
 });
 </script>
+-->
